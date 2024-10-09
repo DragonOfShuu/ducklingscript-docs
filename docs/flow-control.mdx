@@ -1,0 +1,187 @@
+---
+title: Flow Control
+sidebar_position: 7
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Flow Control
+These are commands that manage how your injection is ran. These are conditionals and loops.
+
+## Conditional Statements
+Conditional Statements allow you to run code, only if a certain condition is met. In DucklingScript, we use the commands `IF`, `ELIF`, and `ELSE` to evaluate conditionals.
+
+`ELIF` can only come after an `IF`, and `ELSE` can only come after an `ELIF` or `IF`. If any `IF` or `ELIF` are true, then all subsequent ELIFs and ELSEs are ignored. After that, you can create a new `IF` statement by using the `IF` command once again.
+
+### Examples
+<Tabs>
+    <TabItem value="example1" label="Example 1" default>
+    DucklingScript
+    ```
+    VAR a 10
+
+    REM if a is equal to 10
+    IF a == 10
+        REM this code is ran
+        STRINGLN Hello World
+
+    REM if a is not equal to 10
+    ELSE 
+        STRINGLN Hello World Not Found :/
+    ```
+    Compiled
+    ```
+    STRINGLN Hello World
+    ```
+    </TabItem>
+
+    <TabItem value="example2" label="Example 2">
+    DucklingScript
+    ```
+    VAR a 10
+
+    IF a > 10
+        STRING a is greater than 10
+    ELIF a < 10
+        STRING a is less than 10
+    ELSE
+        STRING a is 10
+    ```
+    Compiled
+    ```
+    STRING a is 10
+    ```
+    </TabItem>
+</Tabs>
+
+## <a name="for_loops"></a>For Loops
+Rubber Ducky 1.0 actually includes a sort of "for" loop already. To do this, write `REPEAT` (DucklingScript also accepts `FOR`, and it does the same things) directly after the command you want to repeat.
+
+Please note that although possible in DucklingScript, DucklingScript does not support the ability to check if you have compiled code BEFORE the repeat statement, and therefore cannot fix any syntax issues in doing so.
+
+:::warning
+Please note that there is a limit to for loops; for loops will eventually error if they run too many times. This can be avoided however by using inner for loops, but that is not recommended.
+:::
+DucklingScript/Rubber Ducky 1.0
+```
+STRINGLN Hello World!
+REPEAT 4
+```
+End Result
+```
+STRINGLN Hello World!
+STRINGLN Hello World!
+STRINGLN Hello World!
+STRINGLN Hello World!
+```
+This is great, but unfortunately this will only work for one line of code. DucklingScript resolves this by including added syntax using indentation!
+
+DucklingScript
+```
+REPEAT 3
+    STRING Not only can I repeat...
+    STRING ...but so can I!
+```
+Compiled
+```
+STRING Not only can I repeat...
+STRING ...but so can I!
+STRING Not only can I repeat...
+STRING ...but so can I!
+STRING Not only can I repeat...
+STRING ...but so can I!
+```
+Not only that, but DucklingScript also includes the ability to count the amount of repeats that have occurred in a variable!
+
+Please note that the first iteration is considered to be `0`.
+
+The syntax for this is: `<variable name>, <iteration count>`.
+
+DucklingScript
+```
+REPEAT i,3
+    $STRING "this is iteration number "+i+"!" 
+```
+Compiled
+```
+STRING this is iteration number 0!
+STRING this is iteration number 1!
+STRING this is iteration number 2!
+```
+
+## While Loops
+While loops are loops that continue to loop whilst a condition is true.
+:::warning
+Please note that there is a limit to while loops; while loops will eventually error if they run too many times.
+:::
+
+### Examples
+<Tabs>
+    <TabItem value="example3" label="Example 1" default>
+        DucklingScript
+        ```
+        VAR a 10
+        WHILE a!=15
+            VAR a a+1
+            $STRING a
+        ```
+        Compiled
+        ```
+        STRING 11
+        STRING 12
+        STRING 13
+        STRING 14
+        STRING 15
+        ```
+    </TabItem>
+
+    <TabItem value="example4" label="Example 2">
+        DucklingScript
+        ```
+        VAR a ""
+        WHILE a!="eee":
+            VAR a a+"e"
+            $STRING a
+        ```
+        Compiled
+        ```
+        STRING e
+        STRING ee
+        STRING eee
+        ```
+    </TabItem>
+</Tabs>
+\
+Just like the for loop, the while loop also allows you to implement a variable that stores the number of iterations completed.
+
+DucklingScript
+```
+VAR a ""
+WHILE count,a!="eee"
+    VAR a a+"e"
+    $STRING a + " [iteration: "+count+"]" 
+```
+Compiled
+```
+STRING e [iteration: 0]
+STRING ee [iteration: 1]
+STRING eee [iteration: 2]
+```
+
+## Loop Controls
+`BREAKLOOP`/`BREAK_LOOP` allows you to *break* out of a loop. This is especially useful if under a certain circumstance you need to leave a loop early.
+DucklingScript
+```
+REPEAT i,10
+    $STRING "iteration "+i
+    IF i==2
+        BREAKLOOP
+```
+Compiled
+```
+STRING iteration 0
+STRING iteration 1
+STRING iteration 2
+```
+As you can see, the number 3 is missing from the compiled, because CONTINUE continued the loop, ignoring the resulting code after it.

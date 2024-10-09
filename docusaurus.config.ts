@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'DucklingScript Docs',
+  tagline: 'Ducks are cool, but ducklings are cooler. 😎',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -69,23 +69,30 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'DucklingScript Docs',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'DucklingScript Logo',
         src: 'img/logo.svg',
       },
       items: [
+        /*
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'Tutorial',
-        },
+        },*/
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
           position: 'right',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'docsSidebar',
+          position: 'left',
+          label: 'Docs',
         },
       ],
     },
@@ -98,6 +105,15 @@ const config: Config = {
             {
               label: 'Tutorial',
               to: '/docs/intro',
+            },
+          ],
+        },
+        {
+          title: 'Docs2',
+          items: [
+            {
+              label: 'Docs',
+              to: '/docs',
             },
           ],
         },

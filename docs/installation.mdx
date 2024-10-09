@@ -1,0 +1,73 @@
+---
+title: Installation
+sidebar_position: 3
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Installation
+
+DucklingScript has been test on:
+
+- Windows 11
+- MacOS Ventura
+- Ubuntu Jammy (Linux)
+
+### Step One
+Make sure to have Python 3.11 or higher installed.
+
+There are many places on the internet that will explain how to download Python, but if you are on Windows, I recommend going [here](https://www.python.org/downloads/).
+
+From here, you can either use pipx or pip to install DucklingScript; I highly recommend using pipx, because it handles putting the scripts on `PATH` for you.
+
+<Tabs>
+  <TabItem value="yespipx" label="With pipx (recommended)" default>
+    ## Step Two 
+    Install Pipx:
+    ```
+    python3.11 -m pip install pipx
+    python3.11 -m pipx ensurepath
+    ```
+    :::info
+    It is recommended that if you have mulitple Python versions to put the python version at the end of the command, as seen above.
+    :::
+
+    Restart your terminal, and then this command should run flawlessly:
+    ```
+    pipx --version
+    ```
+
+    ## Step Three
+    Install `ducklingscript` by running this command:
+    ```
+    pipx install ducklingscript
+    ```
+
+    ## Step Four
+    You can now properly run the command by using `duckling`:
+    ```
+    duckling --help
+    ```
+  </TabItem>
+  <TabItem value="nopipx" label="Without pipx">
+    ## Step Two 
+    To install on any of the major operating systems, simply run:
+    ```
+    pip3.11 install ducklingscript
+    ```
+    :::info
+    It is recommended that if you have mulitple Python versions to put the python version at the end of the command, as seen above.
+    :::
+
+    ## Step Three
+    You now have a few options on how to run the command. This way works in most circumstances:
+    ```
+    duckling --help
+    ```
+    However, if the script is not put on PATH, then it might be best to do it this way:
+    ```
+    pip -m ducklingscript --help
+    ```
+  </TabItem>
+</Tabs>
