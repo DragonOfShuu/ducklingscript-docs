@@ -170,6 +170,7 @@ STRING eee [iteration: 2]
 ```
 
 ## Loop Controls
+### BREAKLOOP
 `BREAKLOOP`/`BREAK_LOOP` allows you to *break* out of a loop. This is especially useful if under a certain circumstance you need to leave a loop early.
 DucklingScript
 ```
@@ -184,4 +185,22 @@ STRING iteration 0
 STRING iteration 1
 STRING iteration 2
 ```
-As you can see, the number 3 is missing from the compiled, because CONTINUE continued the loop, ignoring the resulting code after it.
+As you can see, we left the while loop early because `i` was equal to two.
+
+### CONTINUELOOP
+`CONTINUELOOP`/`CONTINUE_LOOP`/`CONTINUE` allows you to *continue* through the loop.
+DucklingScript
+```
+REPEAT i,5
+    IF i==3
+        CONTINUELOOP
+    $STRING "I like the number "+i+"!" 
+```
+Compiled
+```
+STRING I like the number 0!
+STRING I like the number 1!
+STRING I like the number 2!
+STRING I like the number 4!
+```
+As you can see, the number 3 is missing from the compiled, because `CONTINUE` continued the loop, ignoring the resulting code after it.
