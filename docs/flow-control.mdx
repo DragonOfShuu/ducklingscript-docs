@@ -55,7 +55,7 @@ Conditional Statements allow you to run code, only if a certain condition is met
     </TabItem>
 </Tabs>
 
-## <a name="for_loops"></a>For Loops
+## For Loops
 Rubber Ducky 1.0 actually includes a sort of "for" loop already. To do this, write `REPEAT` (DucklingScript also accepts `FOR`, and it does the same things) directly after the command you want to repeat.
 
 Please note that although possible in DucklingScript, DucklingScript does not support the ability to check if you have compiled code BEFORE the repeat statement, and therefore cannot fix any syntax issues in doing so.
@@ -172,6 +172,7 @@ STRING eee [iteration: 2]
 ## Loop Controls
 ### BREAKLOOP
 `BREAKLOOP`/`BREAK_LOOP` allows you to *break* out of a loop. This is especially useful if under a certain circumstance you need to leave a loop early.
+
 DucklingScript
 ```
 REPEAT i,10
@@ -189,6 +190,7 @@ As you can see, we left the while loop early because `i` was equal to two.
 
 ### CONTINUELOOP
 `CONTINUELOOP`/`CONTINUE_LOOP`/`CONTINUE` allows you to *continue* through the loop.
+
 DucklingScript
 ```
 REPEAT i,5
