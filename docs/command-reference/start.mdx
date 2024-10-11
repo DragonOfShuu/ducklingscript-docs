@@ -1,0 +1,92 @@
+---
+title: START/STARTENV/STARTCODE
+sidebar_position: 28
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# START/STARTENV/STARTCODE
+`START` compiles the code, and adds that files ending environment to this one.
+
+`STARTCODE` only compiles the code, and does not add the file's environment to this one.
+
+`STARTENV` only gives the ending environment, and does not give the compiled code.
+
+**Syntax:** `START <file_path>` or `STARTCODE <file_path>` or `STARTENV <file_path>`
+
+### Examples
+<Tabs>
+    <TabItem value="start_example" label="START" default>
+    File we want to include.
+    ```
+    REM My file name is greetings.txt!
+    FUNC hello
+        STRING Hello World
+    STRING Goodbye!
+    ```
+
+    Script where we `START` the referenced file.
+    ```
+    START .greetings.txt
+    RUN hello
+    ```
+    
+    Compiled
+    ```
+    STRING Hello World
+    STRING Goodbye!
+    ```
+    Notice both the behavior from the function and the execution of the code after carry over to the final compilation.
+    </TabItem>
+    
+
+    <TabItem value="startcode_example" label="STARTCODE">
+    File we want to include.
+    ```
+    REM My file name is greetings.txt!
+    FUNC hello
+        STRING Hello World
+    STRING Goodbye!
+    ```
+
+    Script where we `STARTCODE` the referenced file.
+    ```
+    STARTCODE .greetings.txt
+    REM We can't RUN hello because STARTCODE does not transfer it.
+    ```
+    
+    Compiled
+    ```
+    STRING Goodbye!
+    ```
+    In this case the execution of the code after the function transfers, but the environment (in this case the function itself) does not so we can't reference it.
+    </TabItem>
+
+
+    <TabItem value="startenv_example" label="STARTENV">
+    File we want to include.
+    ```
+    REM My file name is greetings.txt!
+    FUNC hello
+        STRING Hello World
+    STRING Goodbye!
+    ```
+
+    Script where we `STARTENV` the referenced file.
+    ```
+    STARTENV .greetings.txt
+    RUN hello
+    REM Here we can RUN hello, but STRING Goodbye! will never run because STARTENV doesn't transfer it.
+    ```
+    
+    Compiled
+    ```
+    STRING Hello World
+    ```
+    In this case the environment (in this case the function) transfers and we can call it, however the code after it doesn't transfer and thus doesn't run.
+    </TabItem>
+</Tabs>
+
+
+Please checkout [the readme section](../../multi-file-projects)

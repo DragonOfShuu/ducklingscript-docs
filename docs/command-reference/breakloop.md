@@ -1,6 +1,6 @@
 ---
 title: BREAKLOOP/BREAK_LOOP
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 # BREAKLOOP/BREAK_LOOP
@@ -22,5 +22,8 @@ STRING iteration 1
 STRING iteration 2
 ```
 
+As you can see, we left the while loop early because `i` was equal to two.
+
 :::tip
 Confused? Check out our [flow control](/docs/flow-control#breakloop) documentation!
+:::

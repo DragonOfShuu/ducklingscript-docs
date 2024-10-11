@@ -1,12 +1,12 @@
 ---
 title: Debugging Commands
-sidebar_position: 10
+sidebar_position: 9
 ---
 
 # Debugging Commands
 Because DucklingScript ramps up the complexity of your programs, discovering exactly what is happening might become difficult. This is why DucklingScript adds more commands for debugging!
 
-First is `PRINT`, which allows you to send text to the console when you ocmpile your injection.
+First is `PRINT`, which allows you to send text to the console when you compile your injection.
 
 DucklingScript
 ```

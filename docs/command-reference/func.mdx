@@ -1,0 +1,57 @@
+---
+title: FUNC/FUNCTION
+sidebar_position: 14
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# FUNCTION
+`FUNC/FUNCTION` allows you to run the same piece of code as many times as you want, wherever you want along with the ability to control the variables inside.
+
+To make a function, use the command named either `FUNC` or `FUNCTION`. After that, give the name, then following the name include all variable names separated by a comma.
+
+To run a function, use the `RUN` command, followed by the name of the function to run, and then the value for all variables separated by comma in order as they were declared on function creation.
+
+**Syntax:** `FUNC <name> <optional paramaters>`
+
+### Examples
+<Tabs>
+    <TabItem value="example1" label="Example 1" default>
+    DucklingScript
+    ```
+    FUNC hello
+        STRING Hello World!
+
+    RUN hello
+    STRING In the middle
+    RUN hello
+    ```
+    Compiled
+    ```
+    STRING Hello World!
+    STRING In the middle
+    STRING Hello World!
+    ```
+    </TabItem>
+
+    <TabItem value="example2" label="Example 2">
+    DucklingScript
+    ```
+    FUNC hello phrase,number
+        $STRING "The number given was: "+number
+        $STRING phrase
+
+    RUN hello "Foo/Bar",10
+    ```
+    Compiled
+    ```
+    STRING The number given was: 10
+    STRING Foo/Bar
+    ```
+    </TabItem>
+</Tabs>
+
+:::tip
+Want to learn more? Check our [variables-and-functions](/docs/variables-and-functions#functions) documentation!
+:::

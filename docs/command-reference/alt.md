@@ -1,9 +1,10 @@
 ---
 title: ALT
-sidebar_position: 4
+sidebar_position: 1
 ---
 
-Emulates an input as if the user had pressed Alt+chrCode.
+# ALT
+`ALT` emulates an input as if the user had pressed Alt+`chrCode`.
 
 Valid `chrCode`(s): `END`, `ESC`, `ESCAPE`, `SPACE`, `TAB`, any single character (`A`, `B`, `C`, etc...)
 
@@ -11,12 +12,14 @@ Valid `chrCode`(s): `END`, `ESC`, `ESCAPE`, `SPACE`, `TAB`, any single character
 
 Example
 ```
+ALT
 ALT A
 ALT ESC
 ```
 
 Action Log
 ```
+Pressed Alt
 Pressed Alt+A
 Pressed Alt+Esc
 ```

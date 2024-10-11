@@ -1,10 +1,10 @@
 ---
 title: ARROWKEYS
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # ARROWKEYS
-Emulates an input as if the user had pressed that arrow key.
+Emulates an input as if the user had pressed the named arrow key.
 
 **Syntax:** `<arrowDirection>`
 

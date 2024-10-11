@@ -1,10 +1,10 @@
 ---
 title: ALTCHAR [FC]
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # ALTCHAR [[Flipper Command]](https://developer.flipper.net/flipperzero/doxygen/badusb_file_format.html#autotoc_md70)
-On Windows and some Linux systems, you can print characters by holding `ALT` key and entering its code on Numpad. This command emulates that behavior.
+On Windows and some Linux systems, you can print characters by holding `ALT` key and entering its code on Numpad. `ALTCHAR` emulates that behavior.
 
 **Syntax:** `ALTCHAR <chrCode>`
 

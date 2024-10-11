@@ -1,0 +1,59 @@
+---
+title: IF/ELIF/ELSE
+sidebar_position: 16
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# `IF`/`ELIF`/`ELSE`
+`IF`/`ELIF`/`ELSE` allow(s) you to run code, only if a certain condition is met.
+
+`ELIF` can only come after an `IF`, and `ELSE` can only come after an `ELIF` or `IF`. If any `IF` or `ELIF` are true, then all subsequent ELIFs and ELSEs are ignored. After that, you can create a new `IF` statement by using the `IF` command once again.
+
+**Syntax:**
+```
+IF <condition>
+    <codeblock>
+```
+
+### Examples
+<Tabs>
+    <TabItem value="example1" label="Example 1" default>
+    DucklingScript
+    ```
+    VAR a 10
+
+    REM if a is equal to 10
+    IF a == 10
+        REM this code is ran
+        STRINGLN Hello World
+
+    REM if a is not equal to 10
+    ELSE 
+        STRINGLN Hello World Not Found :/
+    ```
+    Compiled
+    ```
+    STRINGLN Hello World
+    ```
+    </TabItem>
+
+    <TabItem value="example2" label="Example 2">
+    DucklingScript
+    ```
+    VAR a 10
+
+    IF a > 10
+        STRING a is greater than 10
+    ELIF a < 10
+        STRING a is less than 10
+    ELSE
+        STRING a is 10
+    ```
+    Compiled
+    ```
+    STRING a is 10
+    ```
+    </TabItem>
+</Tabs>

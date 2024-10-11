@@ -1,6 +1,6 @@
 ---
 title: Multi-File Projects
-sidebar_position: 9
+sidebar_position: 8
 ---
 
 # Multi-File Projects

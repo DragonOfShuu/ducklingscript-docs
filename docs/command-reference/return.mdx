@@ -1,0 +1,48 @@
+---
+title: RETRUN/RET
+sidebar_position: 25
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# RETRUN/RET
+`RETURN`/`RET` exits a function, or your script early.
+
+**Syntax:** `RETURN` or `RET`
+
+### Examples
+<Tabs>
+    <TabItem value="example1" label="Example 1" default>
+    Ducklingscript
+    ```
+    FUNC hello 
+        STRING Hello!
+        RETURN
+        STRING Goodbye!
+
+    RUN hello
+    ```
+
+    Compiled
+    ```
+    STRING Hello!
+    ```
+    Notice that the compiled code does not include `STRING Goodbye!` because we `RETURN` the `FUNCTION` early.
+    </TabItem>
+    
+    <TabItem value="example2" label="Example 2">
+    Ducklingscript
+    ```
+    STRING Hello!
+    RETURN
+    STRING Goodbye!
+    ```
+
+    Compiled
+    ```
+    STRING Hello!
+    ```
+    Notice that the compiled code does not include `STRING Goodbye!` because we `RETURN` the script early.
+    </TabItem>
+</Tabs>

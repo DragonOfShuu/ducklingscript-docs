@@ -1,0 +1,56 @@
+---
+title: STRING/STRINGLN
+sidebar_position: 29
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# STRING/STRINGLN
+`STRING` emulates the user typing the given `<string>`. After the command and one space, all subsequent characters will be typed out.
+
+`STRINGLN` emulates the user typing the given `<string>` and pressing `enter`.
+
+Example
+```
+STRING Hello?
+STRINGLN Hello!
+STRING Goodbye!
+```
+
+<Tabs>
+    <TabItem value="typed" label="Typed Text" default>
+    ```
+    Hello?
+    Hello!
+
+    Goodbye!
+    ```
+    </TabItem>
+
+    <TabItem value="action_log" label="Action Log">
+    ```
+    Pressed H
+    Pressed e
+    Pressed l
+    Pressed l
+    Pressed o
+    Pressed ?
+    Pressed H
+    Pressed e
+    Pressed l
+    Pressed l
+    Pressed o
+    Pressed !
+    Pressed ENTER
+    Pressed G
+    Pressed o
+    Pressed o
+    Pressed d
+    Pressed b
+    Pressed y
+    Pressed e
+    Pressed !
+    ```
+    </TabItem>
+</Tabs>

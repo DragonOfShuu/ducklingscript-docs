@@ -1,11 +1,10 @@
 ---
 title: ALTCODE [FC]
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # ALTCODE [[Flipper Command]](https://developer.flipper.net/flipperzero/doxygen/badusb_file_format.html#autotoc_md70)
-
-On Windows and some Linux systems, you can print characters by holding `ALT` key and entering its code on Numpad. This command emulates that behavior for each character in the string.
+On Windows and some Linux systems, you can print characters by holding `ALT` key and entering its code on Numpad. `ALTCODE` emulates that behavior for each character in the given string.
 
 **Syntax:** `ALTCODE <string>`
 
