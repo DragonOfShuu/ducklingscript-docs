@@ -4,28 +4,13 @@ sidebar_position: 1
 ---
 
 # Why DucklingScript?
-
-There are many key points to using DucklingScript. Here are some of those now.
+Why flop when you can waddle, DucklingScript offers many helpful features such as:
 
 ## Type Safety
-Because DucklingScript has to go through a compilation process, it means DucklingScript can validate your script will work on your hardware. It will tell you that there is an error, and it will tell you exactly where. For example, CTRL requires one character. DucklingScript will validate that this is true.
+With our professional poultry alreay compiling each line, DucklingScript premtively validates your code will work for your hardware. And if there's any errors they'll helpfully point out where and why!
 
 ## Flow Control
-Rubber Ducky Scripting Language 1.0 and even the Flipper's implementation don't add any kind of flow control. Such as if statements, while and for loops, etc. DucklingScript gives you those capabilities, and more!
+While Rubber Ducky Scripting Language 1.0 and even the Flipper's implementation don't add any kind of flow control. Our feathered friends give you the power to swim back around with the implementation of if statements, for/while loops, breakloop, and more!
 
 ## Syntactical Speed
-Normal Rubber Ducky Scripting 1.0 doesn't give much room for speed, and oftentimes leads you to repeating yourself in code. Not only does DucklingScript add commands to improve this, it also makes small syntactical changes. Such as:
-
-Rubber Ducky 1.0
-```
-STRINGLN Hello,
-STRINGLN world,
-STRINGLN it is I!
-```
-DucklingScript
-```
-STRINGLN 
-    Hello,
-    world,
-    it is I!
-```
+When working with Rubber Ducky 1.0 you might find yourself constantly laying the same eggs, but with DucklingScript we've added many commands to cut down on repetition in code and even made some syntax changes to help you type less to do more! [Check it out!](./syntax-changes)
