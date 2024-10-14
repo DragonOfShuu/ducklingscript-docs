@@ -1,6 +1,6 @@
 ---
 title: Debugging Commands
-sidebar_position: 9
+sidebar_position: 6
 ---
 
 # Debugging Commands

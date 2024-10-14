@@ -1,0 +1,8 @@
+{
+  "label": "Reference",
+  "position": 14,
+  "link": {
+    "type": "generated-index",
+    "description": "A general reference for all the commands in DucklingScript."
+  }
+}

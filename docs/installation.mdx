@@ -1,6 +1,6 @@
 ---
 title: Installation
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 import Tabs from '@theme/Tabs';
@@ -8,56 +8,56 @@ import TabItem from '@theme/TabItem';
 
 # Installation
 
-DucklingScript has been test on:
-
+DucklingScript has been tested on:
 - Windows 11
 - MacOS Ventura
 - Ubuntu Jammy (Linux)
 
 ### Step One
-Make sure to have Python 3.11 or higher installed.
+Our ducks are most familiar with Python 3.11, but they'll probably work with most later versions as well. Just make sure you meet the minimum version (Python 3.11) or they might get a bit pecky.
 
-There are many places on the internet that will explain how to download Python, but if you are on Windows, I recommend going [here](https://www.python.org/downloads/).
+Many have explained how to install Python, but if you're not familiar with the eggcellent language the best place to look is pretty much always on the [official site](https://www.python.org).
 
-From here, you can either use pipx or pip to install DucklingScript; I highly recommend using pipx, because it handles putting the scripts on `PATH` for you.
+Once you've got the basics working you can waddle your way through the install with `pip` or `pipx`. Though our lab coat-wearing waterfowl generally recommend `pipx` since that will handle putting the scripts on `PATH` so you (hopefully) don't have to worry about it.
 
 <Tabs>
-  <TabItem value="yespipx" label="With pipx (recommended)" default>
-    ## Step Two 
-    Install Pipx:
+  <TabItem value="with_pipx" label="With pipx (recommended)" default>
+    ## Step Two
+    If you don't have pipx, you can install it with:
     ```
     python3.11 -m pip install pipx
     python3.11 -m pipx ensurepath
     ```
     :::info
-    It is recommended that if you have mulitple Python versions to put the python version at the end of the command, as seen above.
+    We do recommend that if you have multiple Python versions you put the Python version at the end of the command as seen above.
     :::
 
-    Restart your terminal, and then this command should run flawlessly:
+    Once `pipx` is in place run this to check that it's working properly:
     ```
     pipx --version
     ```
 
     ## Step Three
-    Install `ducklingscript` by running this command:
+    If `pipx` is working and you're ready to get quackin, getting DucklingScript on your machine is as simple as:
     ```
     pipx install ducklingscript
     ```
 
     ## Step Four
-    You can now properly run the command by using `duckling`:
+    Assuming everything has gone correctly you should now be able to run the command below and your new ducks will quack back with the basics:
     ```
     duckling --help
     ```
   </TabItem>
-  <TabItem value="nopipx" label="Without pipx">
+
+  <TabItem value="without_pipx" label="Without pipx">
     ## Step Two 
-    To install on any of the major operating systems, simply run:
+    If pipx is too plucky you can install DucklingScript on most of the major operating systems with:
     ```
     pip3.11 install ducklingscript
     ```
     :::info
-    It is recommended that if you have mulitple Python versions to put the python version at the end of the command, as seen above.
+    We do recommend that if you have multiple Python versions put the Python version at the end of the command as seen above.
     :::
 
     ## Step Three
@@ -66,6 +66,7 @@ From here, you can either use pipx or pip to install DucklingScript; I highly re
     duckling --help
     ```
     However, if the script is not put on PATH, then it might be best to do it this way:
+    That said if you haven't got your ducks on `PATH` your best option is probably:
     ```
     pip -m ducklingscript --help
     ```

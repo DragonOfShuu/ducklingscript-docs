@@ -1,0 +1,88 @@
+---
+title: Variables and Functions
+sidebar_position: 3
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Variables and Functions
+## Variables
+Our ducks tend to think of variables as "eggs" that are given names and contain some form of data with a specific type (either a `string`, `number`, or `boolean`). You can find more quacks about data types and expression evaluation [here](./expression-eval).
+```
+VAR counter 0
+REM a variable named "counter" now equals 0
+```
+```
+VAR switch TRUE
+REM a variable named "switch" is now TRUE
+REM (Make sure that TRUE is in all caps)
+```
+
+## Functions
+Another feature of many other languages we've re-quacked for DucklingScript is the Functions, these fancy code blocks let you run the same bits of code as many times as you want, wherever you want, and even let you control the variables inside!
+
+You can ruffle up new functions using either the `FUNC` or `FUNCTION` command along with a name and any parameters you want to have separated by a comma.
+
+To have the ducks use your new function you can simply use the `RUN` command with the name of the function and the value of any parameters separated by a comma in the same order as you put them when creating the function.
+
+### Examples
+<Tabs>
+ <TabItem value="example1" label="Example 1" default>
+    DucklingScript
+    ```
+    FUNC hello
+        STRING Hello Pond!
+
+    RUN hello
+    STRING I like birdseed!
+    RUN hello
+    ```
+
+    Compiled
+    ```
+    STRING Hello World!
+    STRING I like birdseed!
+    STRING Hello World!
+    ```
+ </TabItem>
+
+ <TabItem value="example2" label="Example 2">
+    DucklingScript
+    ```
+    FUNC hello phrase,number
+        $STRING "The number given was: " + number
+        $STRING phrase
+
+    RUN hello "Ducks rule!",10
+    ```
+
+    Compiled
+    ```
+    STRING The number given was: 10
+    STRING Ducks rule!
+    ```
+ </TabItem>
+</Tabs>
+\
+If you'd like the ducks to stop reading a function early, such as if a certain condition is met, you can stop the function and return early with the `RETURN` command.
+
+DucklingScript
+```
+FUNC hello 
+ STRING Hello!
+ RETURN
+ REM This does not run.
+ STRING Goodbye!
+
+RUN hello
+```
+
+Compiled
+```
+STRING Hello!
+```
+
+:::tip
+Along with getting out of functions, our ducks can also identify the `RETURN` command as a way of quitting the script early so make sure you use it in the right context!
+:::
