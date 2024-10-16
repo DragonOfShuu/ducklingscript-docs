@@ -4,56 +4,62 @@ sidebar_position: 6
 ---
 
 # Debugging Commands
-Because DucklingScript ramps up the complexity of your programs, discovering exactly what is happening might become difficult. This is why DucklingScript adds more commands for debugging!
+If you've gotten this far you're probably aware that DucklingScript increases the complexity of the language a decent bit. But not to worry, we've thought of this in advance and taught our ducks a whole nest's worth of new and exciting commands to help you understand what your code is doing!
 
-First is `PRINT`, which allows you to send text to the console when you compile your injection.
+## PRINT
+First among this new knowledge is the `PRINT` command, this lets our ducks give you a peak into what's going on by outputting what you ask them to to the console like so:
 
 DucklingScript
 ```
-PRINT Hello World!
+PRINT Hello Pond!
 ```
+
 Console Output
 ```
 --> Captured STD:OUT
-example.txt - 1 > Hello World!
+example.txt - 1 > Hello Pond!
 ---
 ```
 
-The next one is `NOTEXIST`/`NOT_EXIST`, which allows you to raise an error if the given variable exists.
+## NOTEXIST
+Next up is the `NOTEXIST`/`NOT_EXIST` command, allowing you to raise an error if the given variable exists like so:
 
 DucklingScript
 ```
-VAR a "hello world"
-NOTEXIST a
+VAR greeting "Hello Pond!"
+NOTEXIST greeting
 ```
+
 Console Output
 ```
 ---
 In file 'X:\test.txt', on line 2
-> NOTEXIST a
-GeneralError: 'a' does exist.
+> NOTEXIST greeting
+GeneralError: 'greeting' does exist.
 ---
 ```
 
-The next up is the opposite of `NOTEXIST`, which is `EXIST`. This raises an error if the given variable doesn't exist.
+## EXIST
+In opposition to `NOTEXIST` there is also the `EXIST` command, letting you raise an error if the given variable doesn't exist like this:
 
 DucklingScript
 ```
-EXIST a
+EXIST farewell
 ```
 Console Output
 ```
 ---
 In file 'X:\test.txt', on line 1
-> EXIST a
-GeneralError: 'a' does not exist.
+> EXIST farewell
+GeneralError: 'farewell' does not exist.
 ---
 ```
 
-Finally, we have `PASS`, which allows you to fill in the block space for a block command without actually doing anything. Although a comment works too, `PASS` is cleaner, and allows you to find what hasn't been completed yet in a language specific way.
+## PASS
+The last of the debug commands we have taught the ducks is `PASS`, this allows you to have an "empty" code block that does nothing without raising an error. If you've been quacking for a while now you may have noticed that it's also possible to do this with the `REM` command to leave a comment, but `PASS` is designed to be a cleaner implementation that lets you determine what hasn't been completed yet in a way more relative to DucklingScript.
 
 DucklingScript
 ```
-FUNC a
+FUNC is_spring
     PASS
 ```

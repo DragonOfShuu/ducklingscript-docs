@@ -17,7 +17,7 @@ import TabItem from '@theme/TabItem';
 
 ### Examples
 <Tabs>
-    <TabItem value="start_example" label="START" default>
+ <TabItem value="start_example" label="START" default>
     File we want to include.
     ```
     REM My file name is greetings.txt!
@@ -31,17 +31,16 @@ import TabItem from '@theme/TabItem';
     START .greetings.txt
     RUN hello
     ```
-    
+
     Compiled
     ```
     STRING Hello World
     STRING Goodbye!
     ```
     Notice both the behavior from the function and the execution of the code after carry over to the final compilation.
-    </TabItem>
+ </TabItem>
     
-
-    <TabItem value="startcode_example" label="STARTCODE">
+ <TabItem value="startcode_example" label="STARTCODE">
     File we want to include.
     ```
     REM My file name is greetings.txt!
@@ -55,16 +54,15 @@ import TabItem from '@theme/TabItem';
     STARTCODE .greetings.txt
     REM We can't RUN hello because STARTCODE does not transfer it.
     ```
-    
+
     Compiled
     ```
     STRING Goodbye!
     ```
     In this case the execution of the code after the function transfers, but the environment (in this case the function itself) does not so we can't reference it.
-    </TabItem>
+ </TabItem>
 
-
-    <TabItem value="startenv_example" label="STARTENV">
+ <TabItem value="startenv_example" label="STARTENV">
     File we want to include.
     ```
     REM My file name is greetings.txt!
@@ -79,13 +77,13 @@ import TabItem from '@theme/TabItem';
     RUN hello
     REM Here we can RUN hello, but STRING Goodbye! will never run because STARTENV doesn't transfer it.
     ```
-    
+
     Compiled
     ```
     STRING Hello World
     ```
     In this case the environment (in this case the function) transfers and we can call it, however the code after it doesn't transfer and thus doesn't run.
-    </TabItem>
+ </TabItem>
 </Tabs>
 
 

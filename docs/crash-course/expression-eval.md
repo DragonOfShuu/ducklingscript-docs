@@ -4,32 +4,31 @@ sidebar_position: 4
 ---
 
 # Expression Evaluation
-DucklingScript allows mathematical/logical/conditional expressions. Assuming you already have a basic understanding of 'normal' programming, you should understand ***most*** of this already.
+Our ducks can recognize mathematical, logical, and conditional expressions if you've programmed in another language before you will probably understand ***most*** of what this means.
 
 ## Data Types
-A string is a data type containing characters. It must be wrapped in quotation marks.
+A `string` is a type of data that contains one or multiple characters in a sequence which, as with other languages, our ducks most commonly recognize wrapped in quotation marks.
 ```
 "Hello World"
 ```
-A number is a data type containing, well, a number.
+
+A `number` is the same to our ducks as it is to you, that being a type of data that can contain most numbers.
 ```
 100
 ```
 
-A boolean is either a `TRUE` or `FALSE` value. When using these keywords in DucklingScript, make sure to keep them as all caps.
+A `boolean` is to our ducks similar in nature to a light switch in that it contains a `TRUE` or `FALSE`. Do not our ducks only seem to understand these words when they are in all caps.
 ```
 TRUE
 FALSE
 ```
 
 ## Mathematics
-DucklingScript will follow the rules of PEMDAS (please note that addition/subtraction, and multiplication/division are evaluated left to right. However, multiplation/division is evaluated before addition/subtraction).
+While doing the math the ducks of DucklingScript use the rules of PEMDAS including the typical behaviors of the rule evaluating left to right but prioritizing multiplication and division above addition and subtraction and treating multiplication, division, floor division, and modulus, all with the same priority.
 
-Please note floor division and modulus share the same precedence as multiplication/division.
+Here are some notes from our swimming scientist about all the operators the ducks in DucklingScript are trained to recognize:
 
-Here are all of the operators that DucklingScript accepts:
-
-Exponents:
+Exponents
 ```
 10^2
 ```
@@ -42,7 +41,7 @@ Addition/subtraction
 ```
 Result is 10, and 0
 
-Multiplication/division
+Multiplication/Division
 ```
 5*5
 5/5
@@ -61,14 +60,15 @@ Modulus
 ```
 Result is 1 (when dividing 5 by 2, there is a remainder of 1)
 
-As well as these, `string`(s) can also be concatinated, that is added together, and can even be concatinated with other data types:
+Along with typical expressions, our ducks can also add strings together both with themselves and other data types, we refer to this as "concatenation" which you can see below:
 ```
-"Hello, I like the number "+5
+"Mother duck layed " + 5 + " eggs."
 ```
-Result is `Hello, I like the number 5`.
+Result is `Mother duck layed 5 eggs.`.
 
 ## Conditionals
-Conditional operators produce a true/false statement (a boolean). Conditionals are evaluated after all mathematical statements, and all Conditionals have the same precedence, meaning they are evaluated left to right.
+When looking at conditions our ducks always return either `TRUE` or `FALSE` (like a boolean). Any conditions are considered after any mathematical statements are completed, or "evaluated" if you prefer, and all have the same priority, with our ducks reading them left to right as usual.
+
 
 Equal to
 ```
@@ -119,6 +119,7 @@ Not
 !TRUE
 ```
 The results are `TRUE`, `FALSE`, and an <font color="red">**error**</font>.
+
 :::warning
-Unlike other programming languages, in DucklingScript the `NOT` operator requires parenthesis.
+Our ducks are generally confused about the `NOT` operator, so you'll need to use parenthesis for them to understand it correctly like so: `!(FALSE)`.
 :::

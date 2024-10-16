@@ -17,7 +17,7 @@ WHILE <condition>
 
 ### Examples
 <Tabs>
-    <TabItem value="example1" label="Example 1" default>
+ <TabItem value="example1" label="Example 1" default>
     DucklingScript
     ```
     VAR a 10
@@ -34,9 +34,9 @@ WHILE <condition>
     STRING 14
     STRING 15
     ```
-    </TabItem>
+ </TabItem>
 
-    <TabItem value="example2" label="Example 2">
+ <TabItem value="example2" label="Example 2">
     DucklingScript
     ```
     VAR a ""
@@ -51,7 +51,7 @@ WHILE <condition>
     STRING ee
     STRING eee
     ```
-    </TabItem>
+ </TabItem>
 </Tabs>
 
 :::warning

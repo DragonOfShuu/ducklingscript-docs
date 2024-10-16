@@ -4,14 +4,13 @@ sidebar_position: 6
 ---
 
 # Future Plans
-DucklingScript is still not fully complete, so naturally of course there are still plans in the works.
+Well, here we are again, but we haven't finished baking the birdseed cake of DucklingScript just yet. Our trainers are always looking for new and better ways to train our ducks to serve you, and we've already concocted a few ideas we may include later on below:
 
-Here are the main ones:
 - **Add Plugin Support**\
-This will allow users to use plugins made by the community; these could include macros (such as open powershell), or possibly new functionality (like a block command).
+Community support is always important, and we hope to let you all take part in training our birds yourselves with the addition of user plugins; Aiming to allow the addition of functionalities like macros (such as one to open PowerShell), and possibly new functionalities (such as the block commands).
 
-- **Add Built-in Flipper-Connect System**\
-This would allow a developer to compile their code directly onto the flipper, which cuts out the need to use a software such as qFlipper.
+- **Add Built-in Flipper-Connectivity**\
+Our aim with this is to allow the ducks to compile code directly onto the Flipper Zero, cutting out the need for software such as qFlipper.
 
 - **Live Python Interpretation**\
-This would run your code directly on your computer, and skip the process of compiling to Rubber Ducky Language 1.0.
+Currently our birds work by compiling what you've made into Rubber Ducky 1.0 and letting you run it from there. But in the future we hope to circumvent this neccessity entirely, allowing DucklingScript the power to run directly without the need to compile into another language.

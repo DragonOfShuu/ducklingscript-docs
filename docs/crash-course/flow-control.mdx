@@ -7,202 +7,208 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 # Flow Control
-These are commands that manage how your injection is ran. These are conditionals and loops.
+A new hatchling to DucklingScript is the flow control. Our ducks generally define this as commands you can use that help control how your code runs such as conditionals and loops.
 
 ## Conditional Statements
-Conditional Statements allow you to run code, only if a certain condition is met. In DucklingScript, we use the commands `IF`, `ELIF`, and `ELSE` to evaluate conditionals.
+These let you tell our ducks to run or continue running segments of your code only if they meet certain conditions. Most commonly you can ask our ducks to check for this using the `IF`, `ELIF`, AND `ELSE` commands.
 
-`ELIF` can only come after an `IF`, and `ELSE` can only come after an `ELIF` or `IF`. If any `IF` or `ELIF` are true, then all subsequent ELIFs and ELSEs are ignored. After that, you can create a new `IF` statement by using the `IF` command once again.
+Continuing the above, our brainy birds wanted to note that `ELIF` can only be used after `IF` and `ELSE` can only be used after either `IF` or `ELIF` as well as that any `IF` or `ELIF`(s) that are true will result in subsequent `ELIF` and `ELSE` commands within the same check being ignored.
 
 ### Examples
 <Tabs>
     <TabItem value="example1" label="Example 1" default>
     DucklingScript
     ```
-    VAR a 10
+    VAR eggs 5
 
-    REM if a is equal to 10
-    IF a == 10
+    REM if eggs is equal to 5
+    IF eggs == 5
         REM this code is ran
-        STRINGLN Hello World
+        STRINGLN All the eggs are here!
 
-    REM if a is not equal to 10
+    REM if eggs is not equal to 5
     ELSE 
-        STRINGLN Hello World Not Found :/
+        STRINGLN Some eggs are missing!
     ```
     Compiled
     ```
-    STRINGLN Hello World
+    STRINGLN All the eggs are here!
     ```
     </TabItem>
 
     <TabItem value="example2" label="Example 2">
     DucklingScript
     ```
-    VAR a 10
+    VAR birdseed 20
 
-    IF a > 10
-        STRING a is greater than 10
-    ELIF a < 10
-        STRING a is less than 10
+    IF birdseed > 20
+        STRING There is more than 20 birdseed, yay!
+    ELIF birdseed < 20
+        STRING There is less than 20 birdseed, sadness.
     ELSE
-        STRING a is 10
+        STRING There is exactly 20 birdseed, the ducks are satisfied.
     ```
     Compiled
     ```
-    STRING a is 10
+    STRING There is exactly 20 birdseed, the ducks are satisfied.
     ```
     </TabItem>
 </Tabs>
 
 ## For Loops
-Rubber Ducky 1.0 actually includes a sort of "for" loop already. To do this, write `REPEAT` (DucklingScript also accepts `FOR`, and it does the same things) directly after the command you want to repeat.
+Much like our duck's predecessor Rubber Ducky 1.0, DucklingScript also allows you to `REPEAT` code blocks multiple times along with recognizing `FOR` loops that perform the same action.
 
-Please note that although possible in DucklingScript, DucklingScript does not support the ability to check if you have compiled code BEFORE the repeat statement, and therefore cannot fix any syntax issues in doing so.
+:::info
+Our white-coated web feet have again asked us to place a bit of info here to let you know that DucklingScript does not support checking if you have compiled code BEFORE the `REPEAT` command, which means our ducks won't notice any syntax issues caused by this.
+:::
 
 :::warning
-Please note that there is a limit to for loops; for loops will eventually error if they run too many times. This can be avoided however by using inner for loops, but that is not recommended.
+Keep in mind our ducks can only handle looping so many times; if you run it for too long they will get dizzy and eventually error. It is possible to circumvent this using nested loops, but using this method may have unintended consequences and is not recommended.
 :::
+
 DucklingScript/Rubber Ducky 1.0
 ```
-STRINGLN Hello World!
+STRINGLN Hello Pond!
 REPEAT 4
 ```
+
 End Result
 ```
-STRINGLN Hello World!
-STRINGLN Hello World!
-STRINGLN Hello World!
-STRINGLN Hello World!
+STRINGLN Hello Pond!
+STRINGLN Hello Pond!
+STRINGLN Hello Pond!
+STRINGLN Hello Pond!
 ```
-This is great, but unfortunately this will only work for one line of code. DucklingScript resolves this by including added syntax using indentation!
+While this is a nice feature to have, in the past it only worked on one line of code. With our new quacky compilation, DucklingScript lets you use multiple lines using some fancy code block indentation!
 
 DucklingScript
 ```
 REPEAT 3
-    STRING Not only can I repeat...
-    STRING ...but so can I!
+    STRING This duck quacks...
+    STRING and this one waddles!
 ```
 Compiled
 ```
-STRING Not only can I repeat...
-STRING ...but so can I!
-STRING Not only can I repeat...
-STRING ...but so can I!
-STRING Not only can I repeat...
-STRING ...but so can I!
+STRING This duck quacks...
+STRING and this one waddles!
+STRING This duck quacks...
+STRING and this one waddles!
+STRING This duck quacks...
+STRING and this one waddles!
 ```
-Not only that, but DucklingScript also includes the ability to count the amount of repeats that have occurred in a variable!
-
-Please note that the first iteration is considered to be `0`.
-
-The syntax for this is: `<variable name>, <iteration count>`.
+Along with this our feathered fowl also can count the amount of iterations, that is repeats, that have occurred in a variable! However, our downy doctors would like you to keep in mind that the first iteration is considered to be iteration `0`. You can accomplish this effect with the `<variable_name>, <iteration_count>` syntax as shown:
 
 DucklingScript
 ```
 REPEAT i,3
-    $STRING "this is iteration number "+i+"!" 
+    $STRING "The ducks have counted "+i+" iterations!"
 ```
 Compiled
 ```
-STRING this is iteration number 0!
-STRING this is iteration number 1!
-STRING this is iteration number 2!
+STRING The ducks have counted 0 iterations!
+STRING The ducks have counted 1 iterations!
+STRING The ducks have counted 2 iterations!
 ```
 
 ## While Loops
-While loops are loops that continue to loop whilst a condition is true.
+Unlike the prior discussed loops, a while loop will continue to iterate while its conditional returns `TRUE`.
+
 :::warning
-Please note that there is a limit to while loops; while loops will eventually error if they run too many times.
+Like other loops, iterating too many times will make the ducks dizzy and cause an error. So try to make sure your while loops eventually resolve.
 :::
 
 ### Examples
 <Tabs>
-    <TabItem value="example3" label="Example 1" default>
-        DucklingScript
-        ```
-        VAR a 10
-        WHILE a!=15
-            VAR a a+1
-            $STRING a
-        ```
-        Compiled
-        ```
-        STRING 11
-        STRING 12
-        STRING 13
-        STRING 14
-        STRING 15
-        ```
-    </TabItem>
+ <TabItem value="example3" label="Example 1" default>
+    DucklingScript
+    ```
+    VAR eggs 3
+    WHILE eggs!=5
+        VAR eggs eggs+1
+        $STRING "There are" + eggs + "eggs."
+    ```
 
-    <TabItem value="example4" label="Example 2">
-        DucklingScript
-        ```
-        VAR a ""
-        WHILE a!="eee":
-            VAR a a+"e"
-            $STRING a
-        ```
-        Compiled
-        ```
-        STRING e
-        STRING ee
-        STRING eee
-        ```
-    </TabItem>
+    Compiled
+    ```
+    STRING There are 11 eggs.
+    STRING There are 12 eggs.
+    STRING There are 13 eggs.
+    STRING There are 14 eggs.
+    STRING There are 15 eggs.
+    ```
+ </TabItem>
+
+ <TabItem value="example4" label="Example 2">
+    DucklingScript
+    ```
+    VAR a ""
+    WHILE a!="eee":
+        VAR a a+"e"
+        $STRING a
+    ```
+
+    Compiled
+    ```
+    STRING e
+    STRING ee
+    STRING eee
+    ```
+ </TabItem>
 </Tabs>
 \
-Just like the for loop, the while loop also allows you to implement a variable that stores the number of iterations completed.
+Like the previous loop, our ducks are also able to count the number of iterations in a while loop and store it to a variable using this syntax:
 
 DucklingScript
 ```
-VAR a ""
-WHILE count,a!="eee"
-    VAR a a+"e"
-    $STRING a + " [iteration: "+count+"]" 
+VAR duck_name "Dav"
+WHILE count,duck_name!="Daveee"
+    VAR duck_name duck_name+"e"
+    $STRING duck_name + " has spun " + count + " times!"
+REM Don't worry, Dave likes spinning.
 ```
+
 Compiled
 ```
-STRING e [iteration: 0]
-STRING ee [iteration: 1]
-STRING eee [iteration: 2]
+STRING Dave has spun 0 times!
+STRING Davee has spun 1 times!
+STRING Daveee has spun 2 times!
 ```
 
 ## Loop Controls
 ### BREAKLOOP
-`BREAKLOOP`/`BREAK_LOOP` allows you to *break* out of a loop. This is especially useful if under a certain circumstance you need to leave a loop early.
+To help keep our ducks from getting too dizzy, DucklingScript has added the `BREAKLOOP`/`BREAK_LOOP` command which lets you *break* out of a loop, this can be helpful for situations where you may want to stop looping early.
 
 DucklingScript
 ```
 REPEAT i,10
-    $STRING "iteration "+i
+    $STRING "Dave spun " + i + "time(s)."
     IF i==2
         BREAKLOOP
 ```
 Compiled
 ```
-STRING iteration 0
-STRING iteration 1
-STRING iteration 2
+STRING Dave spun 0 time(s).
+STRING Dave spun 1 time(s).
+STRING Dave spun 2 time(s).
 ```
-As you can see, we left the while loop early because `i` was equal to two.
+As you can see here, our duck Dave only spun `3` times instead of the given `10` because we `BREAKLOOP` when `i` is `2`.
+
 
 ### CONTINUELOOP
-`CONTINUELOOP`/`CONTINUE_LOOP`/`CONTINUE` allows you to *continue* through the loop.
+Along with this, we've also taught our ducks the `CONTINUELOOP`/`CONTINUE_LOOP`/`CONTINUE` command, allowing them to *continue*, that is, skip, through a loop like so:
 
 DucklingScript
 ```
 REPEAT i,5
     IF i==3
         CONTINUELOOP
-    $STRING "I like the number "+i+"!" 
+    $STRING "Suzzie likes the number " + i + "!"
 ```
 Compiled
 ```
-STRING I like the number 0!
-STRING I like the number 1!
-STRING I like the number 2!
-STRING I like the number 4!
+STRING Suzzie likes the number 0!
+STRING Suzzie likes the number 1!
+STRING Suzzie likes the number 2!
+STRING Suzzie likes the number 4!
 ```
-As you can see, the number 3 is missing from the compiled, because `CONTINUE` continued the loop, ignoring the resulting code after it.
+Looking here, you can see, that we didn't say our duck Suzzie liked the number 3 because we `CONTINUE` the loop at that number, ignoring the code after it.

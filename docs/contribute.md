@@ -4,23 +4,22 @@ sidebar_position: 5
 ---
 
 # Contributing
-Python versin must be 3.11 or higher. From then on, I recommend putting the python version at the end of any command involving `python` or `pip`, like so:
+If you'd like to contribute our ducks will need you to be using Python version 3.11 or higher, if you don't already have this and end up with multiple Python versions installed our experimenting eggheads recommend putting the Python version at the end of any command involving `python` or `pip` to avoid mixing Python versions like so:
+
 ```
 python3.11 --version
 pip3.11 --version
 ```
-By doing this, you avoid mixing python versions.
 
 ## Installing Poetry
-Then, you will need to install [poetry](https://python-poetry.org/docs/). You can either use the docs given, or you can follow the steps below.
+Along with Python 3.11+, you will need to install [poetry](https://python-poetry.org/docs/) which you can install either following their documentation or the steps given below. Along with this, the white-coat water-borns recommend using `pipx` the documentation for which is available [here](https://pipx.pypa.io/stable/installation/).,  though `poetry` offers a variety of options.
 
-I recommend using pipx, however poetry offers many options. Find the pipx documentation [here](https://pipx.pypa.io/stable/installation/).
-
-These steps should work on Windows. **However, pipx recommends using** `brew` **to install pipx on MacOS.**
+Our ducks cooked up the following steps to install `pipx` and `poetry` on Windows, but the `pipx` authors have let us know they suggest using `brew` to install `pipx` when using MacOS.
 ```
 python3.11 -m pip install pipx
 python3.11 -m pipx ensurepath
 ```
+
 Restart your terminal, then run:
 ```
 pipx install poetry
@@ -29,30 +28,29 @@ poetry --version
 Poetry should now work as a command.
 
 ## With Poetry Installed
-With poetry installed, inside of the directory of the project, run these commands:
+Once you have `poetry` installed you should also install the necessary dependencies and open the environment for your project. This can be done by running these commands:
 ```
 poetry install
 poetry shell
 ```
-This will install the necessary dependencies, and take you into the virtual environment for the project.
 
-Now, while in the virtual environment, you can run the `duckling` command!
+Assuming everything has gone correctly you can now call upon our ducks in the CLI using the `duckling` command like below!
 ```
 duckling --version
 ```
 
 ## Contribution Requirements
-Before making a pull request, please format your project using the black command (while in the virtual environment provided by poetry of course):
+Assuming you've met all the prior requirements and want to make a pull request, make sure that you format your project within the environment provided by poetry using the `black` command. You can do this by running this command in the root directory of the project:
 
-Run this at the root of the project dir:
 ```
 black .
 ```
-As well as this, make sure all tests succeed:
+
+Along with this our ducks would like you to ensure that you pass all relevant tests which you can check by running this command:
 ```
 pytest
 ```
 
 :::tip[Pull Request Note]
-If you've read through this section throughly, write "I've read the Contribution Requirements" in your pull request.
+Once you've throughly read through the above sections you can have the trainers look over what you've made by adding "I've read the Contribution Requirements" in your pull request.
 :::
