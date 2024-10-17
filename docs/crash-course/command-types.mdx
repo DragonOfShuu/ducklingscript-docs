@@ -1,17 +1,20 @@
 ---
-title: Simple Comands
+title: Command Types
 sidebar_position: 2
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Simple Commands
+# Command Types
+Our ducky friends have two different kinds of commands: Simple Commands, and Block Commands.
+
+## Simple Commands
 Our webbed walkers refer to any command that doesn't require a trailing code block to work (regardless of whether it has arguments) as a "Simple Command", among these are every command from Rubber Ducky 1.0 and the Flipper Commands.
 
 With that said, however, our drifting-down keepers have added a bit of extended syntax to help you.
 
-## Command Grouping
+### Command Grouping
 To help cut down on repeating yourself we've taught the ducks to recognize indentation after a command, all you have to do is write the arguments like so:
 
 <Tabs>
@@ -19,8 +22,8 @@ To help cut down on repeating yourself we've taught the ducks to recognize inden
     DucklingScript
     ```
     STRING 
-    Hello World!
-    I enjoy DucklingScript!
+      Hello World!
+      I enjoy DucklingScript!
     ```
 
     Compiles into:
@@ -34,9 +37,9 @@ To help cut down on repeating yourself we've taught the ducks to recognize inden
     DucklingScript
     ```
     STRINGLN
-    Hello,
-    pond,
-    I am a duck!
+      Hello,
+      pond,
+      I am a duck!
     ```
 
     Compiles into:
@@ -51,9 +54,9 @@ To help cut down on repeating yourself we've taught the ducks to recognize inden
     DucklingScript
     ```
     VAR
-    a 10
-    b 30
-    c "quack"
+      a 10
+      b 30
+      c "quack"
     ```
 
     Compiles into:
@@ -71,14 +74,14 @@ With this new feature though, adding indents to indents might scare the feathers
 STRINGLN
   """
   print("Starting Hacking Software...")
-  for i in range(10):
-  print(f"Hacking your pc in {i} second(s)")
-  if i < 4:
-  print("This is your final warning!")
+    for i in range(10):
+      print(f"Hacking your pc in {i} second(s)")
+      if i < 4:
+        print("This is your final warning!")
   """
 ```
 
-## Dollar Sign Operator
+### Dollar Sign Operator
 To save time our ducks don't [evaluate](./expression-eval) many commands by default which is usually not a problem, but if you need them to take a closer look for you preceeding the command with a dollar sign (`$`) will turn the whole thing into an expression which will be evaluated.
 
 This means our ducks can recognize mathematical expressions, concatenation, variables, and more in your commands; if you're still not sure what that means for you feel free to [check it out](./expression-eval)!
@@ -89,7 +92,7 @@ Our ducks encourage using the dollar sign operator, but would like to note that 
 
 ### Examples
 <Tabs>
-  <TabItem value="example1" label="Example 1" default>
+  <TabItem value="example1" label="Math" default>
     DucklingScript
     ```
     $CTRL 1+1
@@ -101,7 +104,7 @@ Our ducks encourage using the dollar sign operator, but would like to note that 
     ```
   </TabItem>
 
-  <TabItem value="example2" label="Example 2">
+  <TabItem value="example2" label="String Concatenation">
     DucklingScript
     ```
     $STRING "Hello " + "world!"
@@ -113,7 +116,7 @@ Our ducks encourage using the dollar sign operator, but would like to note that 
     ```
   </TabItem>
 
-  <TabItem value="example3" label="Example 3">
+  <TabItem value="example3" label="Variable">
     DucklingScript
     ```
     VAR duck_food "birdseed"
@@ -132,23 +135,27 @@ Our ducks encourage using the dollar sign operator, but would like to note that 
 Along with these our wiggly waddlers have also added a **brand new** type of command! These are commands that have arguments and are followed by a code block, we call them "Block Commands" and as of writing, they are *exclusive* to DucklingScript!
 
 ### Example
-DucklingScript:
-```
-REM This is the Block Command! v
-REPEAT 3
- REM And this is the code block!
- STRING waddle
- STRING quack
-```
+<Tabs>
+  <TabItem value='example1' label='Repeat'>
+    DucklingScript:
+    ```
+    REM This is the Block Command!
+    REPEAT 3
+      REM And this is the code block!
+      STRING waddle
+      STRING quack
+    ```
 
-Compiled
-```
-STRING waddle
-STRING quack
-STRING waddle
-STRING quack
-STRING waddle
-STRING quack
-```
+    Compiled
+    ```
+    STRING waddle
+    STRING quack
+    STRING waddle
+    STRING quack
+    STRING waddle
+    STRING quack
+    ```
+  </TabItem>
+</Tabs>
 
 *More quacking on `REPEAT` [here](./flow-control#for-loops).
