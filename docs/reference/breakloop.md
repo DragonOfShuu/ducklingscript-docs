@@ -1,6 +1,7 @@
 ---
 title: BREAKLOOP/BREAK_LOOP
 sidebar_position: 6
+description: The BREAKLOOP/BREAK_LOOP command.
 ---
 
 # BREAKLOOP/BREAK_LOOP

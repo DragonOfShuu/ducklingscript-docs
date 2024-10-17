@@ -1,6 +1,7 @@
 ---
 title: RUN
 sidebar_position: 26
+description: The RUN command.
 ---
 
 # RUN

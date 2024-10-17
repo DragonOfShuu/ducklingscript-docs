@@ -1,6 +1,7 @@
 ---
 title: DEFAULTDELAY/DEFAULT_DELAY
 sidebar_position: 9
+description: The DEFAULTDELAY/DEFAULT_DELAY command.
 ---
 
 # DEFAULTDELAY/DEFAULT_DELAY

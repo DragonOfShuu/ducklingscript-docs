@@ -1,6 +1,7 @@
 ---
 title: CTRL
 sidebar_position: 8
+description: The CTRL command.
 ---
 
 # CTRL

@@ -1,6 +1,7 @@
 ---
 title: MODIFIER KEYS [FC]
 sidebar_position: 19
+description: The MODIFIER KEY commands.
 ---
 
 # MODIFIER KEYS [[Flipper Command]](https://developer.flipper.net/flipperzero/doxygen/badusb_file_format.html#autotoc_md63)

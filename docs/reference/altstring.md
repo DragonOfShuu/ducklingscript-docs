@@ -1,6 +1,7 @@
 ---
 title: ALTSTRING [FC]
 sidebar_position: 4
+description: The ALTSTRING command.
 ---
 
 # ALTSTRING [[Flipper Command]](https://developer.flipper.net/flipperzero/doxygen/badusb_file_format.html#autotoc_md70)

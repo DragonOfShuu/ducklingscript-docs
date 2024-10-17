@@ -1,6 +1,7 @@
 ---
 title: CONTINUELOOP/CONTINUE_LOOP
 sidebar_position: 7
+description: The CONTINUELOOP/CONTINUE_LOOP command.
 ---
 
 # CONTINUELOOP/CONTINUE_LOOP

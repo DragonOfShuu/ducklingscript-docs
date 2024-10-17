@@ -1,6 +1,7 @@
 ---
 title: EXTENDED
 sidebar_position: 13
+description: The EXTENDED command.
 ---
 
 # EXTENDED

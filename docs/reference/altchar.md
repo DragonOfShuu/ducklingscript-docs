@@ -1,6 +1,7 @@
 ---
 title: ALTCHAR [FC]
 sidebar_position: 2
+description: The ALTCHAR command.
 ---
 
 # ALTCHAR [[Flipper Command]](https://developer.flipper.net/flipperzero/doxygen/badusb_file_format.html#autotoc_md70)

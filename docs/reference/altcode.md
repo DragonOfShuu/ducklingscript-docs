@@ -1,6 +1,7 @@
 ---
 title: ALTCODE [FC]
 sidebar_position: 3
+description: The ALTCODE command.
 ---
 
 # ALTCODE [[Flipper Command]](https://developer.flipper.net/flipperzero/doxygen/badusb_file_format.html#autotoc_md70)

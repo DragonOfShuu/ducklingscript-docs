@@ -1,6 +1,7 @@
 ---
 title: WHILE
 sidebar_position: 32
+description: The WHILE command.
 ---
 
 import Tabs from '@theme/Tabs';
@@ -15,9 +16,8 @@ WHILE <condition>
     <codeblock>
 ```
 
-### Examples
 <Tabs>
- <TabItem value="example1" label="Example 1" default>
+ <TabItem value="number_condition_example" label="Numeric Conditional" default>
     DucklingScript
     ```
     VAR a 10
@@ -36,7 +36,7 @@ WHILE <condition>
     ```
  </TabItem>
 
- <TabItem value="example2" label="Example 2">
+ <TabItem value="string_condition_example" label="String Conditional">
     DucklingScript
     ```
     VAR a ""

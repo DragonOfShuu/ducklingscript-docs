@@ -1,6 +1,7 @@
 ---
 title: ENTER
 sidebar_position: 11
+description: The ENTER command.
 ---
 
 # ENTER

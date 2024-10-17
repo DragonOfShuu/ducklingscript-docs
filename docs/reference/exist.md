@@ -1,6 +1,7 @@
 ---
 title: EXIST
 sidebar_position: 12
+description: The EXIST command.
 ---
 
 # EXIST

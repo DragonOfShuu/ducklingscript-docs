@@ -1,6 +1,7 @@
 ---
 title: IGNORE
 sidebar_position: 17
+description: The IGNORE command.
 ---
 
 # IGNORE

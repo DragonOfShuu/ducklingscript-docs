@@ -1,6 +1,7 @@
 ---
 title: SHIFT
 sidebar_position: 27
+description: The SHIFT command.
 ---
 
 `SHIFT` emulates an input as if the user had pressed Shift+`chrCode`.

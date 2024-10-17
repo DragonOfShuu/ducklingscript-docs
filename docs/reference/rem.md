@@ -1,6 +1,7 @@
 ---
 title: REM
 sidebar_position: 23
+description: The REM command.
 ---
 
 # REM

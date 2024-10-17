@@ -1,6 +1,7 @@
 ---
 title: ARROWKEYS
 sidebar_position: 5
+description: The ARROWKEY commands.
 ---
 
 # ARROWKEYS

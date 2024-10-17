@@ -1,6 +1,7 @@
 ---
 title: REPEAT/FOR
 sidebar_position: 24
+description: The REPEAT/FOR command.
 ---
 
 # REPEAT/FOR

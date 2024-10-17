@@ -1,6 +1,7 @@
 ---
 title: PASS
 sidebar_position: 21
+description: The PASS command.
 ---
 
 # PASS

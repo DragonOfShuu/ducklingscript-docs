@@ -1,6 +1,7 @@
 ---
 title: SYSRQ [FC]
 sidebar_position: 30
+description: The SYSRQ command.
 ---
 
 # SYSRQ [[Flipper Command]](https://developer.flipper.net/flipperzero/doxygen/badusb_file_format.html#autotoc_md72)
