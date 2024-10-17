@@ -10,8 +10,8 @@ If you'd like to contribute our ducks will need you to be using Python version 3
 python3.11 --version
 pip3.11 --version
 ```
-
-## Installing Poetry
+## Steps to Contribution
+### Installing Poetry
 Along with Python 3.11+, you will need to install [poetry](https://python-poetry.org/docs/) which you can install either following their documentation or the steps given below. Along with this, the white-coat water-borns recommend using `pipx` the documentation for which is available [here](https://pipx.pypa.io/stable/installation/).,  though `poetry` offers a variety of options.
 
 Our ducks cooked up the following steps to install `pipx` and `poetry` on Windows, but the `pipx` authors have let us know they suggest using `brew` to install `pipx` when using MacOS.
@@ -27,7 +27,7 @@ poetry --version
 ```
 Poetry should now work as a command.
 
-## With Poetry Installed
+### With Poetry Installed
 Once you have `poetry` installed you should also install the necessary dependencies and open the environment for your project. This can be done by running these commands:
 ```
 poetry install
@@ -39,7 +39,7 @@ Assuming everything has gone correctly you can now call upon our ducks in the CL
 duckling --version
 ```
 
-## Contribution Requirements
+### Contribution Requirements
 Assuming you've met all the prior requirements and want to make a pull request, make sure that you format your project within the environment provided by poetry using the `black` command. You can do this by running this command in the root directory of the project:
 
 ```

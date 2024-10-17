@@ -10,7 +10,8 @@ Each of these commands is recognized by the ducks in the same general way but in
 
 To have the ducks `START` another file in yours, use the `START <filename>` syntax, and as long as both files are in the same folder this should work with no issues.
 
-## Single-Folder Structure
+## Structure Types
+### Single-Folder Structure
 File Structure
 ```
 Project
@@ -35,7 +36,7 @@ STRING "startme" says hello!
 STRING ran startme file.
 ```
 
-## Multi-Folder Structure
+### Multi-Folder Structure
 Now we know many of you are probably asking "What if I want the ducks to work with multiple folders?". And we thought the same thing, which is why we also added compatibility for the dot operator. Using this you can navigate your file structure with the "dot after syntax" letting you reference files inside lower directories like this: `subfolder.lower_script_file` and the "dot before syntax" letting you step up along the structure like this: `.upper_script_file`. You can find a more in-context example of this below:
 
 File Structure

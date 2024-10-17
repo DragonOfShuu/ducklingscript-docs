@@ -6,7 +6,8 @@ sidebar_position: 4
 # Expression Evaluation
 Our ducks can recognize mathematical, logical, and conditional expressions if you've programmed in another language before you will probably understand ***most*** of what this means.
 
-## Data Types
+## Standard Evaluations
+### Data Types
 A `string` is a type of data that contains one or multiple characters in a sequence which, as with other languages, our ducks most commonly recognize wrapped in quotation marks.
 ```
 "Hello World"
@@ -23,7 +24,7 @@ TRUE
 FALSE
 ```
 
-## Mathematics
+### Mathematics
 While doing the math the ducks of DucklingScript use the rules of PEMDAS including the typical behaviors of the rule evaluating left to right but prioritizing multiplication and division above addition and subtraction and treating multiplication, division, floor division, and modulus, all with the same priority.
 
 Here are some notes from our swimming scientist about all the operators the ducks in DucklingScript are trained to recognize:
@@ -66,7 +67,7 @@ Along with typical expressions, our ducks can also add strings together both wit
 ```
 Result is `Mother duck layed 5 eggs.`.
 
-## Conditionals
+### Conditionals
 When looking at conditions our ducks always return either `TRUE` or `FALSE` (like a boolean). Any conditions are considered after any mathematical statements are completed, or "evaluated" if you prefer, and all have the same priority, with our ducks reading them left to right as usual.
 
 

@@ -7,7 +7,8 @@ sidebar_position: 1
 
 While it's not strictly necessary, understanding the eggs we came from will make it easier to learn about the feathers we have. So we highly recommend checking out the documentation for [Rubber Ducky Scripting Language 1.0](https://web.archive.org/web/20220816200129/http://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript) and [Flipper Zero's BadUsb ducky extension](https://docs.flipper.net/bad-usb).
 
-## Project Creation
+## Introduction
+### Project Creation
 To get a start on a new nest, better known as a **project**, you can run the `new` command with a name for the project and a directory if you'd like one:
 ```
 duckling new example-proj
