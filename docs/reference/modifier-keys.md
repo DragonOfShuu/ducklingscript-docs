@@ -16,14 +16,14 @@ For valid `chrCode`(s) go [here](https://developer.flipper.net/flipperzero/doxyg
 Example
 ```
 CTRL-ALT
-CTRL-SHIFT A
+CTRL-SHIFT a
 ALT-SHIFT ESC
 ```
 
 Action Log
 ```
 Pressed CTRL+ALT
-Pressed CTRL+SHIFT+A
+Pressed CTRL+SHIFT+a
 Pressed ALT+SHIFT+ESC
 ```
 :::warning[Note For Flipper Compatibility:]

@@ -7,21 +7,21 @@ description: The ALT command.
 # ALT
 `ALT` emulates an input as if the user had pressed Alt+`chrCode`.
 
-Valid `chrCode`(s): `END`, `ESC`, `ESCAPE`, `SPACE`, `TAB`, any single character (`A`, `B`, `C`, etc...)
+Valid `chrCode`(s): `END`, `ESC`, `ESCAPE`, `SPACE`, `TAB`, any single character (`a`, `b`, `c`, etc...)
 
 **Syntax:** `ALT <chrCode>`
 
 Example
 ```
 ALT
-ALT A
+ALT a
 ALT ESC
 ```
 
 Action Log
 ```
 Pressed Alt
-Pressed Alt+A
+Pressed Alt+a
 Pressed Alt+Esc
 ```
 
