@@ -14,7 +14,7 @@ With our professional poultry already compiling each line, DucklingScript preemp
 While the Rubber Ducky Scripting Language 1.0 and even the Flipper's implementation don't add any flow control, our feathered friends give you the power to swim back around with the implementation of if statements, for/while loops, breakloop, and more!
 
 ### Syntactical Speed
-When working with Rubber Ducky 1.0 you might find yourself constantly laying the same eggs, but with DucklingScript we've added many commands to cut down on repetition in code and even made some syntax changes to help you type less to do more! [Check it out!](./crash-course/simple-commands#command-grouping)
+When working with Rubber Ducky 1.0 you might find yourself constantly laying the same eggs, but with DucklingScript we've added many commands to cut down on repetition in code and even made some syntax changes to help you type less to do more! [Check it out!](./crash-course/command-types#command-grouping)
 
 ### Forward Compatability
 New command in Rubber Ducky that DucklingScript doesn't cover? No problem! Instead of throwing a fit about it, our quack team will simply let you know, which means you can use what you want, when you want; even if we're not sure what it is! Better still, if having our ducks notify you is ruffling your feathers you can simply ask them to stop by switching off the warnings in the config file!

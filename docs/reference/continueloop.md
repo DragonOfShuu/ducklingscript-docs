@@ -26,5 +26,5 @@ STRING I like the number 4!
 As you can see, the number 3 is missing from the compiled, because `CONTINUE` continued the loop, ignoring the resulting code after it.
 
 :::tip
-Confused? Check out our [flow control](/docs/flow-control#continueloop) documentation!
+Confused? Check out our [flow control](/docs/crash-course/flow-control#continueloop) documentation!
 :::

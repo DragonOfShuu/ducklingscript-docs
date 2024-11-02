@@ -33,7 +33,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="A trans-compiler for DucklingScript to Rubber Ducky Lang 1.0, adding new features not originally in Rubber Ducky.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

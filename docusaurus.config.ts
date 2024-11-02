@@ -41,7 +41,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/DragonOfShuu/ducklingscript-docs/tree/main',
         },
         theme: {
           customCss: './src/css/custom.sass',
@@ -82,7 +82,7 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-      copyright: `Copyright © ${new Date().getFullYear()} DucklingScript Documentation, Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Dragon of Shuu, Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
