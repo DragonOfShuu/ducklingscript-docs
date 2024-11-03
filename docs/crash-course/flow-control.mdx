@@ -120,19 +120,19 @@ Like other loops, iterating too many times will make the ducks dizzy and cause a
  <TabItem value="number_condition_example" label="Numeric Conditional" default>
     DucklingScript
     ```
-    VAR eggs 3
+    VAR eggs 0
     WHILE eggs!=5
+        $STRING "There are " + eggs + " eggs."
         VAR eggs eggs+1
-        $STRING "There are" + eggs + "eggs."
     ```
 
     Compiled
     ```
-    STRING There are 11 eggs.
-    STRING There are 12 eggs.
-    STRING There are 13 eggs.
-    STRING There are 14 eggs.
-    STRING There are 15 eggs.
+    STRING There are 0 eggs.
+    STRING There are 1 eggs.
+    STRING There are 2 eggs.
+    STRING There are 3 eggs.
+    STRING There are 4 eggs.
     ```
  </TabItem>
 

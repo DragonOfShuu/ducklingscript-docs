@@ -8,6 +8,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 # START/STARTENV/STARTCODE
+
 `START` compiles the code, and adds that files ending environment to this one.
 
 `STARTCODE` only compiles the code, and does not add the file's environment to this one.
@@ -16,20 +17,27 @@ import TabItem from '@theme/TabItem';
 
 **Syntax:** `START <file_path>` or `STARTCODE <file_path>` or `STARTENV <file_path>`
 
+:::info
+All imported files are expected to have the `.txt` extension. When importing, you don't need
+to include the extension in the name.
+:::
+
 <Tabs>
  <TabItem value="start_example" label="START" default>
     File we want to include.
     ```
     REM My file name is greetings.txt!
-    FUNC hello
-        STRING Hello World
-    STRING Goodbye!
+
+    FUNC goodbye
+        STRING Goodbye!
+
+    STRING Hello World
     ```
 
     Script where we `START` the referenced file.
     ```
-    START .greetings.txt
-    RUN hello
+    START greetings
+    RUN goodbye
     ```
 
     Compiled
@@ -44,20 +52,22 @@ import TabItem from '@theme/TabItem';
     File we want to include.
     ```
     REM My file name is greetings.txt!
-    FUNC hello
-        STRING Hello World
-    STRING Goodbye!
+
+    FUNC goodbye
+        STRING Goodbye!
+
+    STRING Hello World
     ```
 
     Script where we `STARTCODE` the referenced file.
     ```
-    STARTCODE .greetings.txt
-    REM We can't RUN hello because STARTCODE does not transfer it.
+    STARTCODE greetings
+    REM We can't RUN goodbye because STARTCODE does not transfer it.
     ```
 
     Compiled
     ```
-    STRING Goodbye!
+    STRING Hello World
     ```
     In this case the execution of the code after the function transfers, but the environment (in this case the function itself) does not so we can't reference it.
  </TabItem>
@@ -66,21 +76,23 @@ import TabItem from '@theme/TabItem';
     File we want to include.
     ```
     REM My file name is greetings.txt!
-    FUNC hello
-        STRING Hello World
-    STRING Goodbye!
+
+    FUNC goodbye
+        STRING Goodbye!
+
+    STRING Hello World
     ```
 
     Script where we `STARTENV` the referenced file.
     ```
-    STARTENV .greetings.txt
-    RUN hello
-    REM Here we can RUN hello, but STRING Goodbye! will never run because STARTENV doesn't transfer it.
+    STARTENV greetings
+    RUN goodbye
+    REM Here we can RUN goodbye, but STRING Hello World will never run because STARTENV doesn't transfer it.
     ```
 
     Compiled
     ```
-    STRING Hello World
+    STRING Goodbye!
     ```
     In this case the environment (in this case the function) transfers and we can call it, however the code after it doesn't transfer and thus doesn't run.
  </TabItem>
