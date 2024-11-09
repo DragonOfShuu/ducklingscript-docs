@@ -11,7 +11,7 @@ On Windows and some Linux systems, you can print characters by holding `ALT` key
 
 Example
 ```
-ALTCODE "Hello"
+ALTCODE Hello
 ```
 Output
 ```
