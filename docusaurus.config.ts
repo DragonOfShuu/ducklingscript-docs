@@ -64,15 +64,14 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'docsSidebar',
           position: 'left',
-          label: 'Documentation',
+          label: 'Docs',
         },
-        /*
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'docReference',
           position: 'left',
-          label: 'Tutorial',
-        },*/
+          label: 'Commands',
+        },
         {
           href: 'https://github.com/DragonOfShuu/DucklingScript',
           label: 'GitHub',
