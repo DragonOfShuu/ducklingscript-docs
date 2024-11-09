@@ -26,5 +26,5 @@ STRING iteration 2
 As you can see, we left the while loop early because `i` was equal to two.
 
 :::tip
-Confused? Check out our [flow control](/docs/crash-course/flow-control#breakloop) documentation!
+Confused? Check out our [flow control](/docs/guides/crash-course/flow-control#breakloop) documentation!
 :::

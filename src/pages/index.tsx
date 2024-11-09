@@ -19,7 +19,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/why-ducklingscript">
+            to="/docs/guides/why-ducklingscript">
             Let's get quackin! 🦆
           </Link>
         </div>
