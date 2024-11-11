@@ -1,0 +1,66 @@
+---
+title: REPEAT/FOR
+sidebar_position: 24
+description: The REPEAT/FOR command.
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# REPEAT/FOR
+`REPEAT`/`FOR` allows you to *repeat* a given block of code `<int>` times. 
+Also supports an optional parameter for a new variable that keeps count
+of the current iteration, which is zero based. 
+
+**Syntax:**
+```
+REPEAT <OPTIONAL: count>,<int>
+    <codeBlock>
+```
+
+<Tabs>
+    <TabItem value="basic_example" label="Basic" default>
+        DucklingScript
+        ```
+        REPEAT 3
+            PRINT Hello World
+
+        FOR 3
+            PRINT Goodbye!
+        ```
+
+        Output
+        ```
+        Hello World
+        Hello World
+        Hello World
+        Goodbye!
+        Goodbye!
+        Goodbye!
+        ```
+    </TabItem>
+    <TabItem value="counter_example" label="Counter">
+        DucklingScript
+        ```
+        REPEAT n,3
+            $PRINT "I like the number "+n+"!"
+
+        FOR n,3
+            $PRINT "I don't like the number "+(n+3)+" >:("
+        ```
+
+        Output
+        ```
+        I like the number 0!
+        I like the number 1!
+        I like the number 2!
+        I don't like the number 3 >:(
+        I don't like the number 4 >:(
+        I don't like the number 5 >:(
+        ```
+    </TabItem>
+</Tabs>
+
+:::warning
+Please note that there is a limit to for loops; for loops will eventually error if they run too many times. This can be avoided however by using inner for loops, but that is not recommended.
+:::

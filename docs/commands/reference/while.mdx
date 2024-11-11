@@ -10,9 +10,12 @@ import TabItem from '@theme/TabItem';
 # WHILE
 `WHILE` creates a loop that continue to repeat whilst the given `<condition>` is `TRUE`.
 
+Also supports an optional parameter for a new variable that keeps count
+of the current iteration, which is zero based. 
+
 **Syntax:**
 ```
-WHILE <condition>
+WHILE <optional: count>,<condition>
     <codeblock>
 ```
 
@@ -50,6 +53,25 @@ WHILE <condition>
     STRING e
     STRING ee
     STRING eee
+    ```
+ </TabItem>
+
+ <TabItem value="counter_example" label="Counter">
+    DucklingScript
+    ```
+    VAR a 10
+    WHILE counter,a!=15
+        VAR a a+1
+        $STRING a*counter
+    ```
+
+    Compiled
+    ```
+    STRING 0
+    STRING 12
+    STRING 26
+    STRING 42
+    STRING 60
     ```
  </TabItem>
 </Tabs>
