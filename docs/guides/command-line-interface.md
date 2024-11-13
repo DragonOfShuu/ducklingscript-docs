@@ -21,7 +21,7 @@ Here we'll cover a few of the available commands our ducks can recognize in the 
 
 
 ### new
-The `new` command can be used to have our ducks build you a new project, taking in any options, the name of the project, and optionally a directory path to put it in like so: `duckling new [OPTIONS] NAME [PATH]`. This will create a file tree with a folder named after the project that contains the default `config.yaml` and `main.txt` files you can use to get started.
+The `new` command can be used to have our ducks build you a new project, taking in any options, the name of the project, and optionally a directory path to put it in like so: `duckling new [OPTIONS] NAME [PATH]`. This will create a file tree with a folder named after the project that contains the default `config.yaml` and `main.dkls` files you can use to get started.
 
 Example:
 ```
@@ -32,7 +32,7 @@ Output Tree
 ```
 example-proj
 |- config.yaml
-|- main.txt
+|- main.dkls
 ```
 
 ### compile
