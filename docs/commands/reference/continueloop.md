@@ -5,15 +5,15 @@ description: The CONTINUELOOP/CONTINUE_LOOP command.
 ---
 
 # CONTINUELOOP/CONTINUE_LOOP
-`CONTINUELOOP`/`CONTINUE_LOOP` allows you to *continue* out of a loop. This is especially useful if under a certain circumstance you need to leave a loop early.
+`CONTINUELOOP`/`CONTINUE_LOOP`/`CONTINUE` allows you to *continue* out of a loop. This is especially useful if under a certain circumstance you need to leave a loop early.
 
-**Syntax:** `CONTINUELOOP` or `CONTINUE_LOOP`
+**Syntax:** `CONTINUELOOP` or `CONTINUE_LOOP` or `CONTINUE`
 
 Example
 ```
 REPEAT i,5
     IF i==3
-        CONTINUELOOP
+        CONTINUE
     $STRING "I like the number "+i+"!" 
 ```
 Output
