@@ -1,6 +1,5 @@
 ---
 title: PRINT
-sidebar_position: 22
 description: The PRINT command.
 ---
 

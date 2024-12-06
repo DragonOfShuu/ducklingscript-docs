@@ -1,6 +1,5 @@
 ---
 title: NOTEXIST/NOT_EXIST
-sidebar_position: 20
 description: The NOTEXIST/NOT_EXIST command.
 ---
 

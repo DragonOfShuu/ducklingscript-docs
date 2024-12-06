@@ -1,6 +1,5 @@
 ---
 title: MODIFIER KEYS [FC]
-sidebar_position: 19
 description: The MODIFIER KEY commands.
 ---
 

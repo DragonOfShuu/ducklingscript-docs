@@ -1,6 +1,5 @@
 ---
 title: DELAY
-sidebar_position: 10
 description: The DELAY command.
 ---
 

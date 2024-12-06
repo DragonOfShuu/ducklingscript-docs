@@ -1,6 +1,5 @@
 ---
 title: MENU
-sidebar_position: 18
 description: The MENU command.
 ---
 

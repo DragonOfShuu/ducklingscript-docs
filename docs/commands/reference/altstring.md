@@ -1,6 +1,5 @@
 ---
 title: ALTSTRING [FC]
-sidebar_position: 4
 description: The ALTSTRING command.
 ---
 

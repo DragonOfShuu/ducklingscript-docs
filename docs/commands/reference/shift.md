@@ -1,6 +1,5 @@
 ---
 title: SHIFT
-sidebar_position: 27
 description: The SHIFT command.
 ---
 

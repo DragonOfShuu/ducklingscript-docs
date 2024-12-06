@@ -1,6 +1,5 @@
 ---
 title: ALT
-sidebar_position: 1
 description: The ALT command.
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: WAIT_FOR_BUTTON_PRESS [FC]
-sidebar_position: 19
 description: The WAIT_FOR_BUTTON_PRESS command.
 ---
 

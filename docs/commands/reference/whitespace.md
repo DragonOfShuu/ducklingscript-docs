@@ -1,6 +1,5 @@
 ---
 title: WHITESPACE
-sidebar_position: 33
 description: The WHITESPACE command.
 ---
 

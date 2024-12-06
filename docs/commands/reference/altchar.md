@@ -1,6 +1,5 @@
 ---
 title: ALTCHAR [FC]
-sidebar_position: 2
 description: The ALTCHAR command.
 ---
 

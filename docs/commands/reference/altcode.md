@@ -1,6 +1,5 @@
 ---
 title: ALTCODE [FC]
-sidebar_position: 3
 description: The ALTCODE command.
 ---
 

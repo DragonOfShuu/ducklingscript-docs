@@ -1,6 +1,5 @@
 ---
 title: SYSRQ [FC]
-sidebar_position: 30
 description: The SYSRQ command.
 ---
 
