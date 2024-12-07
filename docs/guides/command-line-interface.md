@@ -38,6 +38,15 @@ example-proj
 ### compile
 Using the `compile` command tells our ducks you're ready for them to read over what you've made, converting it over to Rubber Ducky 1.0 in a process called "compilation". You can tell our ducks exactly how you want this to be done by passing in the options, the file to compile, and the output directory of where you want the results to go like so: `duckling compile [OPTIONS] FILENAME [OUTPUT]`. Along with this, you can also adjust any of the options you could normally give the command via the global config.
 
+### interpret
+
+Using the `interpret` command quacks your code outloud using Quackinter. You can run your DucklingScript locally instead of using the flipper!
+
+Just use it like you would the compile command, but expect your code to actually run locally: 
+```
+duckling interpret hello_world.dkls
+```
+
 ### help
 Similar to the `--help` flag, `help` can be used to tell our ducks you'd like more about the given command like so: `duckling help [OPTIONS] COMMAND_NAME`.
 

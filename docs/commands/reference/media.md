@@ -12,29 +12,29 @@ description: The MEDIA command.
 MEDIA <key>
 ```
 
-**ACCEPTED KEYS**
-```
-POWER
-REBOOT
-SLEEP
-LOGOFF
-VOLUME_UP
-VOLUME_DOWN
-BRIGHT_UP
-BRIGHT_DOWN
-HOME
-BACK
-FORWARD
-REFRESH
-SNAPSHOT
-PLAY
-PAUSE
-PLAY_PAUSE
-NEXT_TRACK
-PREV_TRACK
-STOP
-MUTE
-FN
-EJECT
-EXIT
-```
+**Accepted Keys:**
+Command|Quackinter Support
+| ------ | ------ |
+| POWER | ✔️ |
+REBOOT | ✔️
+SLEEP | ✔️
+LOGOFF | ➖ Unsupported on Unix
+VOLUME_UP | ✔️
+VOLUME_DOWN | ✔️
+BRIGHT_UP | ✔️
+BRIGHT_DOWN | ✔️
+HOME | ✔️
+BACK | ✔️
+FORWARD | ✔️
+REFRESH | ➖ Substitution for Ctrl+R
+SNAPSHOT | ✔️
+PLAY | ✔️
+PAUSE | ✔️
+PLAY_PAUSE | ➖ Pauses the media (takes no action if already paused) then plays.
+NEXT_TRACK | ✔️
+PREV_TRACK | ✔️
+STOP | ✔️
+MUTE | ✔️
+FN | ✔️
+EJECT | ❌
+EXIT | ❌

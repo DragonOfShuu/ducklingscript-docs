@@ -11,6 +11,12 @@ import TabItem from '@theme/TabItem';
 
 `ELIF` can only come after an `IF`, and `ELSE` can only come after an `ELIF` or `IF`. If any `IF` or `ELIF` are true, then all subsequent ELIFs and ELSEs are ignored. After that, you can create a new `IF` statement by using the `IF` command once again.
 
+**System Var:**
+```
+$IF_SUCCESS
+```
+If success is true if there was a recent `IF`/`ELIF` statement that resulted to `TRUE`. Value is reset to `FALSE` if there is a new `IF` statement is created, and results to `FALSE`.
+
 **Syntax:**
 ```
 IF <condition>

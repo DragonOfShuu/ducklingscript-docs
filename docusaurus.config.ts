@@ -73,6 +73,12 @@ const config: Config = {
           label: 'Commands',
         },
         {
+          type: 'docSidebar',
+          sidebarId: 'docQuackinter',
+          position: 'left',
+          label: 'Quackinter',
+        },
+        {
           href: 'https://github.com/DragonOfShuu/DucklingScript',
           label: 'GitHub',
           position: 'right',
@@ -85,7 +91,7 @@ const config: Config = {
     },
     prism: {
       theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      darkTheme: prismThemes.gruvboxMaterialDark,
     },
   } satisfies Preset.ThemeConfig,
 };

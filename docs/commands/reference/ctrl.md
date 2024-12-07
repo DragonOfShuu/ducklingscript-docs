@@ -10,7 +10,9 @@ Valid `chrCode`(s): `BREAK`, `PAUSE`, `ESCAPE`, `ESC`, any single character (`a`
 
 **Syntax:** `CTRL <chrCode>`
 
-Example
+**Example:**
+
+DucklingScript
 ```
 CTRL
 CTRL a
