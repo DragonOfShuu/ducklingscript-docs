@@ -38,4 +38,4 @@ if return_data.error:
     print("There was an error while running the code.")
 ```
 
-The code above shows how you would use the interpreter in its simplicity. Most other kinds of documentation can be found within class docs.
+The code above shows how you would use the interpreter in its simplicity. Most other kinds of documentation can be found within class documentation.
