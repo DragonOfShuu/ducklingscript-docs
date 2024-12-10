@@ -9,12 +9,15 @@ PRINTLN is used to print text during DucklingScript interpretation.
 PRINTLN is a `Quackinter` only commmand, meaning you can only use it along side with the built-in interpreter for DucklingScript; it is not supported for use on the flipper or generic Rubber Ducky Scripting Language 1.0.
 :::
 
-**Syntax:**
+## Syntax
+
 ```
 PRINTLN <string>
 ```
 
-**Example:**
+## Example
+
+
 DucklingScript
 ```
 PRINTLN Hello World

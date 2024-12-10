@@ -7,15 +7,18 @@ description: The DEFAULTDELAY/DEFAULT_DELAY command.
 `DEFAULTDELAY`/`DEFAULT_DELAY` is used to define the delay between each command in milliseconds.
 [default value is 0]
 
-**Syntax:** 
-`DEFAULTDELAY <optional int>` or `DEFAULT_DELAY <optional int>`
+## Syntax
+```
+<DEFAULTDELAY|DEFAULT_DELAY> <optional int>
+```
 
 **System Var:**
 ```
 $DEFAULT_DELAY
 ```
 
-**Example:**
+## Example
+
 
 DucklingScript:
 ```

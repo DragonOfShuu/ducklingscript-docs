@@ -4,15 +4,18 @@ description: The MODIFIER KEY commands.
 ---
 
 # MODIFIER KEYS [[Flipper Command]](https://developer.flipper.net/flipperzero/doxygen/badusb_file_format.html#autotoc_md63)
-Emulates an input as if the user had pressed the `<modiferKey>`+`<chrCode>`.
+Emulates an input as if the user had pressed the `<modiferKey>`+`<char>`.
 
 Valid `modiferKey`(s): `CTRL-ALT`, `CTRL-SHIFT`, `ALT-SHIFT`, `ALT-GUI`, `GUI-SHIFT`
 
-For valid `chrCode`(s) go [here](https://developer.flipper.net/flipperzero/doxygen/badusb_file_format.html#autotoc_md61).
+For valid `char`(s) go [here](https://developer.flipper.net/flipperzero/doxygen/badusb_file_format.html#autotoc_md61).
 
-**Syntax:** `<modiferKey> <chrCode>`
+## Syntax
+```
+<modiferKey> <char>
+```
 
-Example
+## Example
 ```
 CTRL-ALT
 CTRL-SHIFT a

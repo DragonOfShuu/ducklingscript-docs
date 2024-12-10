@@ -6,9 +6,12 @@ description: The CONTINUELOOP/CONTINUE_LOOP command.
 # CONTINUELOOP/CONTINUE_LOOP
 `CONTINUELOOP`/`CONTINUE_LOOP`/`CONTINUE` allows you to *continue* out of a loop. This is especially useful if under a certain circumstance you need to leave a loop early.
 
-**Syntax:** `CONTINUELOOP` or `CONTINUE_LOOP` or `CONTINUE`
+## Syntax
+```
+<CONTINUELOOP|CONTINUE_LOOP|CONTINUE>
+```
 
-Example
+## Example
 ```
 REPEAT i,5
     IF i==3

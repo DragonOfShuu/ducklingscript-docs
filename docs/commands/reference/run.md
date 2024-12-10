@@ -6,9 +6,12 @@ description: The RUN command.
 # RUN
 `RUN` executes the given `FUNCTION`.
 
-**Syntax:** `RUN <function>`
+## Syntax
+```
+RUN <functionName>
+```
 
-Example
+## Example
 ```
 FUNC hello
     PRINT Hello World

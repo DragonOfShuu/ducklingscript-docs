@@ -7,7 +7,8 @@ description: The MEDIA command.
 
 `MEDIA` presses specific keys related to media, such as `PLAY`, `STOP`, `NEXT_TRACK`, or even `BRIGHT_UP`
 
-**Syntax:**
+## Syntax
+
 ```
 MEDIA <key>
 ```

@@ -6,9 +6,12 @@ description: The REM command.
 # REM
 `REM` creates a comment for your code. You can put anything you like as an argument, if any.
 
-**Syntax:** `REM <optional any>`
+## Syntax
+```
+REM <optional any>
+```
 
-Example
+## Example
 ```
 REM Hello there, this is a comment.
 PRINT Hello World

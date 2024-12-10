@@ -6,9 +6,12 @@ description: The EXTENDED command.
 # EXTENDED
 Emulates an input as if the user had pressed the named key.
 
-**Syntax:** `<keyName>`
+## Syntax
+```
+<keyName>
+```
 
-Example
+## Example
 ```
 BREAK
 PAUSE

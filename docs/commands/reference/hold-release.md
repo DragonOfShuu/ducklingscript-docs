@@ -7,10 +7,11 @@ description: The HOLD/RELEASE commands.
 
 `HOLD`/`RELEASE` holds and releases a key respectively. 
 
-**Syntax:**
+## Syntax
+
 ```
-HOLD <"special key" or char>
-RELEASE <"special key" or char>
+HOLD <"special key"|char>
+RELEASE <"special key"|char>
 ```
 
 **System Var:**
@@ -21,7 +22,8 @@ $HELD_KEY
 `$HELD_KEY` is the most recent key that was held (or empty if the most recent was released), not the full list of all keys. The DucklingScript evaluator does not handle lists quite yet.
 :::
 
-**Example:**
+## Example
+
 DucklingScript
 ```
 HOLD a

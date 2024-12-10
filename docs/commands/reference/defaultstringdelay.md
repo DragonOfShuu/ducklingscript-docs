@@ -7,7 +7,8 @@ description: The DEFAULTSTRINGDELAY command.
 
 `DEFAULTSTRINGDELAY` adjusts the delay between each character in milliseconds for all `STRINGLN` and `STRING` that comes after.
 
-**Syntax:**
+## Syntax
+
 ```
 DEFAULTSTRINGDELAY <number>
 ```
@@ -17,7 +18,8 @@ DEFAULTSTRINGDELAY <number>
 $DEFAULT_STRING_DELAY
 ```
 
-**Example:**
+## Example
+
 
 DucklingScript
 ```

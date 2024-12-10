@@ -6,9 +6,12 @@ description: The ALTCODE command.
 # ALTCODE [[Flipper Command]](https://developer.flipper.net/flipperzero/doxygen/badusb_file_format.html#autotoc_md70)
 On Windows and some Linux systems, you can print characters by holding `ALT` key and entering its code on Numpad. `ALTCODE` emulates that behavior for each character in the given string.
 
-**Syntax:** `ALTCODE <string>`
+## Syntax
+```
+ALTCODE <string>
+```
 
-Example
+## Example
 ```
 ALTCODE Hello
 ```

@@ -3,13 +3,16 @@ title: SHIFT
 description: The SHIFT command.
 ---
 
-`SHIFT` emulates an input as if the user had pressed Shift+`chrCode`.
+`SHIFT` emulates an input as if the user had pressed Shift+`char`.
 
-Valid `chrCode`(s): `DELETE`, `HOME`, `INSERT`, `PAGEUP`, `PAGEDOWN`, `WINDOWS`, `GUI`, `UPARROW`, `DOWNARROW`, `LEFTARROW`, `RIGHTARROW`, `TAB`, any single character (`A`, `B`, `C`, etc...)
+Valid `char`(s): `DELETE`, `HOME`, `INSERT`, `PAGEUP`, `PAGEDOWN`, `WINDOWS`, `GUI`, `UPARROW`, `DOWNARROW`, `LEFTARROW`, `RIGHTARROW`, `TAB`, any single character (`A`, `B`, `C`, etc...)
 
-**Syntax:** `SHIFT <chrCode>`
+## Syntax
+```
+SHIFT <char>
+```
 
-Example
+## Example
 ```
 SHIFT
 SHIFT A

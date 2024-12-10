@@ -4,13 +4,17 @@ description: The CTRL command.
 ---
 
 # CTRL
-`CTRL` emulates an input as if the user had pressed Ctrl+`chrCode`.
+`CTRL` emulates an input as if the user had pressed Ctrl+`char`.
 
-Valid `chrCode`(s): `BREAK`, `PAUSE`, `ESCAPE`, `ESC`, any single character (`a`, `b`, `c`, etc...)
+Valid `char`(s): `BREAK`, `PAUSE`, `ESCAPE`, `ESC`, any single character (`a`, `b`, `c`, etc...)
 
-**Syntax:** `CTRL <chrCode>`
+## Syntax
+```
+CTRL <char>
+```
 
-**Example:**
+## Example
+
 
 DucklingScript
 ```

@@ -6,9 +6,12 @@ description: The PASS command.
 # PASS
 `PASS` acts as a placeholder for future code; recommended for functions that you have not written out yet.
 
-**Syntax:** `PASS`
+## Syntax
+```
+pass
+```
 
-Example
+## Example
 ```
 FUNC myFunc
     PASS

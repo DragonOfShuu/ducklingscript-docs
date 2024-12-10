@@ -7,12 +7,14 @@ description: The STRINGDELAY command.
 
 `STRINGDELAY` adjusts the delay between each character in ONLY the next `STRING`/`STRINGLN` in milliseconds.
 
-**Syntax:**
+## Syntax
+
 ```
 STRINGDELAY <number>
 ```
 
-**Example:**
+## Example
+
 DucklingScript
 ```
 STRINGDELAY 200

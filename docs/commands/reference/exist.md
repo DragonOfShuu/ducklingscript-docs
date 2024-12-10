@@ -6,9 +6,12 @@ description: The EXIST command.
 # EXIST
 `EXIST` raises an error if the given variable doesn't exist.
 
-**Syntax:** `EXIST <var>`
+## Syntax
+```
+EXIST <var>
+```
 
-Example
+## Example
 ```
 EXIST a
 ```

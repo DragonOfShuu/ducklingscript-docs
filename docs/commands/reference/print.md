@@ -6,9 +6,12 @@ description: The PRINT command.
 # PRINT
 `PRINT` allows you to send text to the console when you compile your injection.
 
-**Syntax:** `PRINT <string>`
+## Syntax
+```
+PRINT <string>
+```
 
-Example
+## Example
 ```
 PRINT Hello World
 ```
