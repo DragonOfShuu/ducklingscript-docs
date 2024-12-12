@@ -3,11 +3,11 @@ title: Installation
 sidebar_position: 2
 ---
 
-# Installation for Command Line Use
+## Command Line
 
 The installation process is the exact same as DucklingScript, and Quackinter is built into and uses DucklingScript. Installation instructions are [here](/docs/guides/installation).
 
-# Installation for Python Integration
+## Python Integration
 
 To use Quackinter in one of your projects, simply install the package from pip:
 
