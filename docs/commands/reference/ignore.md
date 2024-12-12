@@ -1,6 +1,5 @@
 ---
 title: IGNORE
-sidebar_position: 17
 description: The IGNORE command.
 ---
 
@@ -12,13 +11,14 @@ into the output file with no checks.
 Please note that this is dangerous, and only recommended if you know what you are doing, or need forward compatibility.
 :::
 
-**Syntax:**
+## Syntax
+
 ```
 IGNORE
-    <codeblock>
+    <codeBlock>
 ```
 
-Example
+## Example
 ```
 IGNORE
     print("Hey wait, this isn't DucklingScript!?")

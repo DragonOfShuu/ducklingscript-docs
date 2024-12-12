@@ -15,16 +15,16 @@ duckling new example-proj
 ```
 
 :::info
-While you can collect sticks with the above command if you'd like; a project isn't strictly necessary to use DucklingScript and you're welcome to just make a `.txt` file and compile it if you'd prefer.
+While you can collect sticks with the above command if you'd like; a project isn't strictly necessary to use DucklingScript and you're welcome to just make a `.dkls` file and compile it if you'd prefer.
 :::
 
-If you opt to indeed pick up twigs and create a project you'll find a `config.yaml` and a `main.txt` in the project folder. Whenever this project is run any settings in the global config will be overridden by the new `config.yaml` in the project folder.
+If you opt to indeed pick up twigs and create a project you'll find a `config.yaml` and a `main.dkls` in the project folder. Whenever this project is run any settings in the global config will be overridden by the new `config.yaml` in the project folder.
 
 While you're sitting in your project's pile you can compile it at any time with this command:
 ```
-duckling compile main.txt
+duckling compile main.dkls
 ```
 
 Keep in mind any file in the root directory of the project will use the `config.yaml` of that project by default.
 
-In case you've made it this far and it's not yet obvious, our quill-bearing quackers within DucklingScript use the `.txt` file extension. This is an **important** inkling to scratch down as it will be relevant to importing external files later.
+In case you've made it this far and it's not yet obvious, our quill-bearing quackers within DucklingScript use the `.dkls` file extension. This is an **important** inkling to scratch down as it will be relevant to importing external files later.

@@ -1,15 +1,17 @@
 ---
 title: NOTEXIST/NOT_EXIST
-sidebar_position: 20
 description: The NOTEXIST/NOT_EXIST command.
 ---
 
 # NOTEXIST/NOT_EXIST
 `NOTEXIST`/`NOT_EXIST` raises an error if the given variable does exist.
 
-**Syntax:** `NOTEXIST <var>` or `NOT_EXIST <var>`
+## Syntax
+```
+<NOTEXIST|NOT_EXIST> <var>
+```
 
-Example
+## Example
 ```
 NOTEXIST a
 ```

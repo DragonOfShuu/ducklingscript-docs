@@ -6,7 +6,7 @@ sidebar_position: 7
 # Multi-File Projects
 But wait, there's more! That's right, thanks to the innovative ideas of our lab-endowed lake dwellers DucklingScript can also support Multi-File projects through the use of the `START`, `STARTENV`, and `STARTCODE` commands.
 
-Each of these commands is recognized by the ducks in the same general way but individually allows you to compile different things from one file into the output file after compilation. Do note though, that the ducky doctors will need you to use the `.txt` extension on all script files for this to work correctly.
+Each of these commands is recognized by the ducks in the same general way but individually allows you to compile different things from one file into the output file after compilation. Do note though, that the ducky doctors will need you to use the `.dkls` extension on all script files for this to work correctly.
 
 To have the ducks `START` another file in yours, use the `START <filename>` syntax, and as long as both files are in the same folder this should work with no issues.
 
@@ -15,16 +15,16 @@ To have the ducks `START` another file in yours, use the `START <filename>` synt
 File Structure
 ```
 Project
-|-main.txt
-|-startme.txt
+|-main.dkls
+|-startme.dkls
 ```
 
-DucklingScript - startme.txt
+DucklingScript - startme.dkls
 ```
 STRING "startme" says hello!
 ```
 
-DucklingScript - main.txt
+DucklingScript - main.dkls
 ```
 START startme
 STRING ran startme file.
@@ -42,24 +42,24 @@ Now we know many of you are probably asking "What if I want the ducks to work wi
 File Structure
 ```
 Project
-|-above.txt
+|-above.dkls
 |-middle
-  |-main.txt
+  |-main.dkls
   |-below
-    |-below.txt
+    |-below.dkls
 ```
 
-DucklingScript - above.txt
+DucklingScript - above.dkls
 ```
 STRING Hello from the sky above!
 ```
 
-DucklingScript - below.txt
+DucklingScript - below.dkls
 ```
 STRING Hello from the pond below!
 ```
 
-DucklingScript - main.txt
+DucklingScript - main.dkls
 ```
 REM Using the dot operator at the beginning, we can go up a folder.
 REM Using the dot operator in the middle allows use to go down a folder.

@@ -1,15 +1,17 @@
 ---
 title: ARROWKEYS
-sidebar_position: 5
 description: The ARROWKEY commands.
 ---
 
 # ARROWKEYS
 Emulates an input as if the user had pressed the named arrow key.
 
-**Syntax:** `<arrowDirection>`
+## Syntax
+```
+<arrowDirection>
+```
 
-Example
+## Example
 ```
 UP
 DOWN

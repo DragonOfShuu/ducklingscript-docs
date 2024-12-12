@@ -1,15 +1,17 @@
 ---
 title: BREAKLOOP/BREAK_LOOP
-sidebar_position: 6
 description: The BREAKLOOP/BREAK_LOOP command.
 ---
 
 # BREAKLOOP/BREAK_LOOP
 `BREAKLOOP`/`BREAK_LOOP` allows you to *break* out of a loop. This is especially useful if under a certain circumstance you need to leave a loop early.
 
-**Syntax:** `BREAKLOOP` or `BREAK_LOOP`
+## Syntax
+```
+<BREAKLOOP|BREAK_LOOP>
+```
 
-Example
+## Example
 ```
 REPEAT i,10
     $STRING "iteration "+i

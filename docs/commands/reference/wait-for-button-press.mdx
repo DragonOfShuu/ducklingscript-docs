@@ -1,0 +1,39 @@
+---
+title: WAIT_FOR_BUTTON_PRESS [FC]
+description: The WAIT_FOR_BUTTON_PRESS command.
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+# WAIT_FOR_BUTTON_PRESS [[Flipper Command]](https://developer.flipper.net/flipperzero/doxygen/badusb_file_format.html#autotoc_md63)
+
+`WAIT_FOR_BUTTON_PRESS` stops execution and waits for user interaction. Quackinter also supports an extra string to display 
+to the user, as it will show up as a window.
+
+:::note
+When using the flipper, the flipper will expect a key press to continue 
+exectuion. However, Quackinter will expect enter to be pressed, or 
+interaction with the button it'll create on screen.
+:::
+
+## Syntax
+```
+WAIT_FOR_BUTTON_PRESS <string QUACKOnly>
+```
+
+## Example
+<Tabs>
+ <TabItem value="generic" label="Generic" default>
+    ```
+    WAIT_FOR_BUTTON_PRESS
+    ```
+ </TabItem>
+
+ <TabItem value="quack" label="Quackinter Only">
+    ```
+    WAIT_FOR_BUTTON_PRESS Finished execution!
+    ```
+ </TabItem>
+</Tabs>

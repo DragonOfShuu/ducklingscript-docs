@@ -1,19 +1,21 @@
 ---
 title: VAR
-sidebar_position: 31
 description: The VAR command.
 ---
 
 # VAR
 `VAR` defines a new variable. Give the name, then the value, separated by a space.
 
-**Syntax:** `VAR <name> <value>`
+## Syntax
+```
+VAR <name> <value>
+```
 
 :::warning
 Most commands do not evaluate variables by default, to bypass this behavior begin the command with a `$` like so: `$PRINT <varname>`. You can find more information about this in our [Dollar Sign Operator](/docs/guides/crash-course/command-types#dollar-sign-operator) documentation.
 :::
 
-Example
+## Example
 ```
 VAR hello "Hi!"
 $PRINT hello

@@ -18,7 +18,7 @@ PRINT Hello Pond!
 Console Output
 ```
 --> Captured STD:OUT
-example.txt - 1 > Hello Pond!
+example.dkls - 1 > Hello Pond!
 ---
 ```
 
@@ -34,7 +34,7 @@ NOTEXIST greeting
 Console Output
 ```
 ---
-In file 'X:\test.txt', on line 2
+In file 'X:\test.dkls', on line 2
 > NOTEXIST greeting
 GeneralError: 'greeting' does exist.
 ---
@@ -50,7 +50,7 @@ EXIST farewell
 Console Output
 ```
 ---
-In file 'X:\test.txt', on line 1
+In file 'X:\test.dkls', on line 1
 > EXIST farewell
 GeneralError: 'farewell' does not exist.
 ---

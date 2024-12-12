@@ -1,17 +1,19 @@
 ---
 title: ALT
-sidebar_position: 1
 description: The ALT command.
 ---
 
 # ALT
-`ALT` emulates an input as if the user had pressed Alt+`chrCode`.
+`ALT` emulates an input as if the user had pressed Alt+`char`.
 
-Valid `chrCode`(s): `END`, `ESC`, `ESCAPE`, `SPACE`, `TAB`, any single character (`a`, `b`, `c`, etc...)
+Valid `char`(s): `END`, `ESC`, `ESCAPE`, `SPACE`, `TAB`, any single character (`a`, `b`, `c`, etc...)
 
-**Syntax:** `ALT <chrCode>`
+## Syntax
+```
+ALT <char>
+```
 
-Example
+## Example
 ```
 ALT
 ALT a
