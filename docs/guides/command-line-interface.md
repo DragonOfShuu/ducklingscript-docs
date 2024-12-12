@@ -1,6 +1,6 @@
 ---
 title: Command Line Interface (CLI)
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # Command Line Interface (CLI)
@@ -56,13 +56,13 @@ Here's what our ducks have to say about the `string` command:
 duckling help string
 ```
 
-![help_example](resources/help_example.png)
+![help example](resources/help_example.png)
 
 ### all
 Using the `all` command will have our ducks give you an overview of every command available in DucklingScript, and possibly any added commands added by plug-ins as well.
 
 All commands as of November 28th, 2023:
-![all_commands](resources/all_commands.png)
+![all commands](resources/all_commands.png)
 
 ### version
 As you might expect, the `version` command will just ask our ducks what version of DucklingScript you're currently using like this: `duckling version`.
@@ -73,4 +73,4 @@ Ducklingscript is version 0.1.0
 ```
 
 ## Global Config File
-When using the CLI, our ducks will automatically create or modify a global config file. The keys inside of this global config should be identical to the ones you can find inside of the projects `config.yaml` file. This global config lets you define the desired behavior any time you compile a script file that doesn't already belong to a project (if it does belong to a project the project `config.yaml` will be used instead).
+When using the CLI, our ducks will automatically create or modify a global config file. The keys inside of this global config should be identical to the ones you can find inside of the project's `config.yaml` file. This global config lets you define the desired behavior any time you compile a script file that doesn't already belong to a project (if it does belong to a project the project `config.yaml` will be used instead).

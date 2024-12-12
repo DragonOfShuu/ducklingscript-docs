@@ -1,6 +1,6 @@
 ---
 title: Contributing
-sidebar_position: 5
+sidebar_position: 7
 ---
 
 # Contributing
@@ -30,7 +30,7 @@ Poetry should now work as a command.
 ### With Poetry Installed
 Once you have `poetry` installed you should also install the necessary dependencies and open the environment for your project. This can be done by running these commands:
 ```
-poetry install
+poetry install --with dev
 poetry shell
 ```
 
@@ -40,15 +40,17 @@ duckling --version
 ```
 
 ### Contribution Requirements
-Assuming you've met all the prior requirements and want to make a pull request, make sure that you format your project within the environment provided by poetry using the `black` command. You can do this by running this command in the root directory of the project:
+Assuming you've met all the prior requirements and want to make a pull request, make sure that you polish your project within the environment provided by poetry using the by running the provided `polish` command. This can be done like so:
 
 ```
-black .
+poetry run poe polish
 ```
+
+Make sure that ruff accepts your changes too!
 
 Along with this our ducks would like you to ensure that you pass all relevant tests which you can check by running this command:
 ```
-pytest
+poetry run pytest
 ```
 
 :::tip[Pull Request Note]

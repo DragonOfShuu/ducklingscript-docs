@@ -1,6 +1,6 @@
 ---
 title: Future Plans
-sidebar_position: 6
+sidebar_position: 8
 ---
 
 # Future Plans
