@@ -56,3 +56,74 @@ poetry run pytest
 :::tip[Pull Request Note]
 Once you've throughly read through the above sections you can have the trainers look over what you've made by adding "I've read the Contribution Requirements" in your pull request.
 :::
+
+## Helpful Dev Commands
+
+DucklingScript has many commands that can be ran to assist with development of the project, using the `poe` (Poe the Poet) plugin with Poetry. You can use it like so:
+
+```
+poetry run poe [command]
+```
+
+Let's go over some of the commands available.
+
+### polish
+
+`polish` use the black formatter to clean your code, and uses the ruff checker to lint the project.
+
+```
+poetry run poe polish
+```
+
+### gen_test
+
+`gen_test` is used to create a directory called `custom_test_scripts`, and create a `.dkls` you can edit and run using a separate command. This is great for testing the language.
+
+```
+poetry run poe gen_test
+```
+
+### test
+
+`test` runs the tests in `custom_test_scripts`. `test` supports an integer argument for the test you want to run (default = 1). Make sure any extra files you create in this directory follow the rule `custom[number].dkls`.
+
+```
+poetry run poe test [test_index]
+```
+
+### encode
+
+`encode` encodes given numbers into Base64 VLQ. Base64 VLQ is used by DucklingScript when encoding source maps.
+
+```
+poetry run poe encode [numbers, separated by commas]
+```
+
+#### Example
+
+```
+poetry run poe encode 12,14,5,3
+```
+
+Output:
+```
+-> YcKG
+```
+
+### decode
+
+`decode` decodes a given string from Base64 VLQ to a string. Base64 VLQ is used by DucklingScript when encoding source maps.
+
+```
+poetry run poe decode [string]
+```
+
+#### Example
+```
+poetry run poe decode YcKG
+```
+
+Output:
+```
+-> (12, 14, 5, 3)
+```
