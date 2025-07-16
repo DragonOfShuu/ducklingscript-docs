@@ -12,6 +12,3 @@ Community support is always important, and we hope to let you all take part in t
 
 - **Add Built-in Flipper-Connectivity**\
 Our aim with this is to allow the ducks to compile code directly onto the Flipper Zero, cutting out the need for software such as qFlipper.
-
-- **Live Python Interpretation**\
-Currently our birds work by compiling what you've made into Rubber Ducky 1.0 and letting you run it from there. But in the future we hope to circumvent this neccessity entirely, allowing DucklingScript the power to run directly without the need to compile into another language.
