@@ -8,6 +8,14 @@ import TabItem from '@theme/TabItem';
 
 # START/STARTENV/STARTCODE
 
+:::danger
+Not Recommended: Please use `FROM` or `IMPORT` instead.
+
+Using `START` is almost like copying and pasting the code from one file to another. This 
+can lead to code duplication and makes it harder to maintain your code. Instead, consider 
+using `FROM` or `IMPORT` to reference other files in a more structured way.
+:::
+
 `START` compiles the code, and adds that files ending environment to this one.
 
 `STARTCODE` only compiles the code, and does not add the file's environment to this one.

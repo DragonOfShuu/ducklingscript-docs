@@ -1,0 +1,46 @@
+---
+title: FROM
+description: The FROM command.
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# FROM
+`FROM` allows you to include code from other files into your current script.
+
+This is useful for importing functions, variables, or any other code that you want to reuse across multiple scripts.
+
+:::info
+When using `FROM`, if a variable and a function have the same name, both will be imported.
+:::
+
+## Syntax
+```
+FROM <filePath> IMPORT <variable|function>,<variable|function>,...
+```
+
+In this case, file path is created using dots instead of slashes, and the 
+file must have the `.dkls` extension (although you don't need to include 
+the extension in the name when importing).
+
+## Example
+
+library.dkls
+```
+REM This is a library file with some functions.
+FUNC greet
+    STRINGLN Hello from the library!
+```
+
+main.dkls
+```
+FROM library IMPORT greet
+RUN greet
+```
+
+Compiled
+```
+STRINGLN Hello from the library!
+```
+
