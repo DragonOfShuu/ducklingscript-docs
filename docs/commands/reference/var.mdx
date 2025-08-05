@@ -6,6 +6,10 @@ description: The VAR command.
 # VAR
 `VAR` defines a new variable. Give the name, then the value, separated by a space.
 
+:::info
+`VAR` generally tries to reference any previous variables outside of a function. However, using `LOCALVAR`, you can ignore any outside variables and create a new one that is only accessible within the function.
+:::
+
 ## Syntax
 ```
 VAR <name> <value>
