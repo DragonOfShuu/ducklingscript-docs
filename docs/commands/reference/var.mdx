@@ -1,23 +1,26 @@
 ---
-title: VAR
+title: VAR/LOCALVAR
 description: The VAR command.
 ---
+
 
 # VAR
 `VAR` defines a new variable. Give the name, then the value, separated by a space.
 
 :::info
-`VAR` generally tries to reference any previous variables outside of a function. However, using `LOCALVAR`, you can ignore any outside variables and create a new one that is only accessible within the function.
+`VAR` generally tries to reference any previous variables outside of a function. Meaning Var acts similarly the the javascript `var`. 
+However, using `LOCALVAR`, you can ignore any outside variables and create a new one that is accessible to the current function or block.
 :::
+
 
 ## Syntax
 ```
 VAR <name> <value>
 ```
-
-:::warning
-Most commands do not evaluate variables by default, to bypass this behavior begin the command with a `$` like so: `$PRINT <varname>`. You can find more information about this in our [Dollar Sign Operator](/docs/guides/crash-course/command-types#dollar-sign-operator) documentation.
-:::
+Alt:
+```
+LOCALVAR <name> <value>
+```
 
 ## Example
 ```
@@ -29,4 +32,28 @@ Output
 ```
 Hi!
 hello
+```
+
+## Example with LOCALVAR
+```
+VAR x 5
+VAR y 5
+
+FUNCTION test_func
+    REM x is only 10 now inside this function.
+    LOCALVAR x 10
+    REM y is 10 globally.
+    VAR y 10
+
+RUN test_func
+
+REM X should be 5
+$PRINT x
+REM y should be 10
+$PRINT y
+```
+Output
+```
+5
+10
 ```
