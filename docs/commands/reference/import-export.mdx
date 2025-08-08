@@ -40,3 +40,63 @@ modules, or even classes in object-oriented programming.
 
 ## Example
 
+<Tabs>
+    <TabItem value="regular_example" label="Regular Usage" default>
+        library.dkls
+        ```
+        FUNCTION greet
+            STRINGLN Hello from the library!
+
+        EXPORT greet
+        ```
+
+        main.dkls
+        ```
+        IMPORT library
+        RUN greet
+        ```
+
+        Compiled
+        ```
+        STRINGLN Hello from the library!
+        ```
+    </TabItem>
+    <TabItem value="env_persistence" label="Environment Persistence">
+        library.dkls
+        ```
+        VAR count 0
+
+        FUNCTION count_up
+            VAR count count + 1
+        
+        FUNCTION print_count
+            STRINGLN "Current count is:" + count
+
+        EXPORT count_up,print_count
+        ```
+
+        main.dkls
+        ```
+        IMPORT library
+        STRINGLN This is before running count_up.
+
+        REPEAT 3
+            RUN count_up
+            RUN print_count
+        ```
+
+        Compiled
+        ```
+        STRINGLN This is before running count_up.
+        STRINGLN Current count is: 1
+        STRINGLN Current count is: 2
+        STRINGLN Current count is: 3
+        ```
+
+        We aren't directly changing the value of `count` in the main script. In fact, `count` isn't
+        even accessible to us, but we are able to use the function `count_up` to change it. This 
+        can only happen because the original environment of the file is preserved and used when the 
+        functions are run.
+    </TabItem>
+</Tabs>
+
