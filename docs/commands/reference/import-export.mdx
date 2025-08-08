@@ -1,0 +1,42 @@
+---
+title: IMPORT/EXPORT
+description: The IMPORT/EXPORT commands.
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# IMPORT/EXPORT
+`IMPORT` allows you to use functions and variables from other files into your current script, so long as they are exported.
+
+`EXPORT` allows you to make functions and variables available for import in other files.
+
+:::info
+When using `IMPORT`/`EXPORT`, if a variable and a function have the same name, both will be imported.
+:::
+
+## Syntax
+```
+IMPORT <filePath>
+EXPORT <variable|function>,<variable|function>,...
+```
+
+In this case, file path is created using dots instead of slashes, and the 
+file must have the `.dkls` extension (although you don't need to include 
+the extension in the name when importing).
+
+## The Difference
+
+`IMPORT` and `EXPORT` are not the same as `FROM`. `FROM` is used to include functions
+and variables of your choosing, while `EXPORT` allows the creator of the library to specify 
+which functions and variables are available for import, and you can use `IMPORT` to use them 
+into your script.
+
+`IMPORT` and `EXPORT` are also not like `START`, `STARTENV`, or `STARTCODE`. `START` is used 
+to include the code from another file (almost like you are literally copying and pasting the code), 
+while `IMPORT` and `EXPORT` are used to share specific functions and variables between files, whilst
+keeping the original environment of those variables and functions intact. This works similarly to
+modules, or even classes in object-oriented programming.
+
+## Example
+
